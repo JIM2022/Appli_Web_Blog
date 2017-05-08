@@ -1,0 +1,4 @@
+seo:
+    resource: "@SeoBundle/Resources/config/routing.yml"
+    prefix:   /
+

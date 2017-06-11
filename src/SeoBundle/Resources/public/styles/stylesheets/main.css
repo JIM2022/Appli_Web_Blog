@@ -1,0 +1,493 @@
+/* line 3, ../sass/_homepage.scss */
+#index html,
+#index body {
+  height: 100%;
+  width: 100%;
+}
+/* line 8, ../sass/_homepage.scss */
+#index body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+/* line 11, ../sass/_homepage.scss */
+#index hr {
+  border-color: #F05F40;
+  border-width: 3px;
+  max-width: 50px;
+}
+/* line 16, ../sass/_homepage.scss */
+#index hr.light {
+  border-color: white;
+}
+/* line 19, ../sass/_homepage.scss */
+#index a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #F05F40;
+}
+/* line 25, ../sass/_homepage.scss */
+#index a:hover,
+#index a:focus {
+  color: #eb3812;
+}
+/* line 29, ../sass/_homepage.scss */
+#index h1,
+#index h2,
+#index h3,
+#index h4,
+#index h5,
+#index h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+/* line 37, ../sass/_homepage.scss */
+#index p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+/* line 42, ../sass/_homepage.scss */
+#index .bg-primary {
+  /*background-color: #1a8cf0;*/
+  background-image: url("../../assets/img/portfolio/fullsize/montagne.jpg");
+  background-position: center center;
+}
+/* line 47, ../sass/_homepage.scss */
+#index .bg-dark {
+  background-color: #222222;
+  color: white;
+}
+/* line 51, ../sass/_homepage.scss */
+#index .text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 54, ../sass/_homepage.scss */
+#index section {
+  padding: 100px 0;
+}
+/* line 57, ../sass/_homepage.scss */
+#index aside {
+  padding: 50px 0;
+}
+/* line 60, ../sass/_homepage.scss */
+#index .no-padding {
+  padding: 0;
+}
+/* line 63, ../sass/_homepage.scss */
+#index .navbar-default {
+  background-color: white;
+  border-color: rgba(34, 34, 34, 0.05);
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+/* line 71, ../sass/_homepage.scss */
+#index .navbar-default .navbar-header .navbar-brand {
+  color: red;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 77, ../sass/_homepage.scss */
+#index .navbar-default .navbar-header .navbar-brand:hover,
+#index .navbar-default .navbar-header .navbar-brand:focus {
+  color: #1a8cf0;
+}
+/* line 81, ../sass/_homepage.scss */
+#index .navbar-default .navbar-header .navbar-toggle {
+  font-weight: 700;
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+}
+/* line 87, ../sass/_homepage.scss */
+#index .navbar-default .nav > li > a,
+#index .navbar-default .nav > li > a:focus {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  color: #222222;
+}
+/* line 94, ../sass/_homepage.scss */
+#index .navbar-default .nav > li > a:hover,
+#index .navbar-default .nav > li > a:focus:hover {
+  color: #1a8cf0;
+}
+/* line 98, ../sass/_homepage.scss */
+#index .navbar-default .nav > li.active > a,
+#index .navbar-default .nav > li.active > a:focus {
+  color: #F05F40 !important;
+  background-color: transparent;
+}
+/* line 103, ../sass/_homepage.scss */
+#index .navbar-default .nav > li.active > a:hover,
+#index .navbar-default .nav > li.active > a:focus:hover {
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  /* line 108, ../sass/_homepage.scss */
+  #index .navbar-default {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  /* line 112, ../sass/_homepage.scss */
+  #index .navbar-default .navbar-header .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  /* line 115, ../sass/_homepage.scss */
+  #index #img_logo {
+    border-radius: 80px;
+  }
+  /* line 118, ../sass/_homepage.scss */
+  #index .navbar-default .navbar-header .navbar-brand:hover,
+  #index .navbar-default .navbar-header .navbar-brand:focus {
+    color: white;
+  }
+  /* line 122, ../sass/_homepage.scss */
+  #index .navbar-default .nav > li > a,
+  #index .navbar-default .nav > li > a:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  /* line 126, ../sass/_homepage.scss */
+  #index .navbar-default .nav > li > a:hover,
+  #index .navbar-default .nav > li > a:focus:hover {
+    color: white;
+  }
+  /* line 130, ../sass/_homepage.scss */
+  #index .navbar-default.affix {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.05);
+  }
+  /* line 134, ../sass/_homepage.scss */
+  #index .navbar-default.affix .navbar-header .navbar-brand {
+    color: #1a8cf0;
+    font-size: 14px;
+  }
+  /* line 138, ../sass/_homepage.scss */
+  #index .navbar-default.affix .navbar-header .navbar-brand:hover,
+  #index .navbar-default.affix .navbar-header .navbar-brand:focus {
+    color: #1a8cf0;
+  }
+  /* line 142, ../sass/_homepage.scss */
+  #index .navbar-default.affix .nav > li > a,
+  #index .navbar-default.affix .nav > li > a:focus {
+    color: #222222;
+  }
+  /* line 146, ../sass/_homepage.scss */
+  #index .navbar-default.affix .nav > li > a:hover,
+  #index .navbar-default.affix .nav > li > a:focus:hover {
+    color: #1a8cf0;
+  }
+}
+/* line 152, ../sass/_homepage.scss */
+#index header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url("../img/header.jpg");
+  text-align: center;
+  color: white;
+}
+/* line 165, ../sass/_homepage.scss */
+#index header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+/* line 171, ../sass/_homepage.scss */
+#index header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+/* line 178, ../sass/_homepage.scss */
+#index header .header-content .header-content-inner hr {
+  margin: 30px auto;
+}
+/* line 181, ../sass/_homepage.scss */
+#index header .header-content .header-content-inner p {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  /* line 188, ../sass/_homepage.scss */
+  #index header {
+    min-height: 100%;
+  }
+  /* line 191, ../sass/_homepage.scss */
+  #index header .header-content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+  /* line 199, ../sass/_homepage.scss */
+  #index header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 204, ../sass/_homepage.scss */
+  #index header .header-content .header-content-inner h1 {
+    font-size: 50px;
+  }
+  /* line 207, ../sass/_homepage.scss */
+  #index header .header-content .header-content-inner p {
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* line 214, ../sass/_homepage.scss */
+#index .section-heading {
+  margin-top: 0;
+}
+/* line 217, ../sass/_homepage.scss */
+#index .service-box {
+  max-width: 400px;
+  margin: 50px auto 0;
+}
+@media (min-width: 992px) {
+  /* line 222, ../sass/_homepage.scss */
+  #index .service-box {
+    margin: 20px auto 0;
+  }
+}
+/* line 226, ../sass/_homepage.scss */
+#index .service-box p {
+  margin-bottom: 0;
+}
+/* line 229, ../sass/_homepage.scss */
+#index .portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+/* line 235, ../sass/_homepage.scss */
+#index .portfolio-box .portfolio-box-caption {
+  color: white;
+  opacity: 0;
+  display: block;
+  background: rgba(240, 95, 64, 0.9);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+/* line 249, ../sass/_homepage.scss */
+#index .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 256, ../sass/_homepage.scss */
+#index .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+#index .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  padding: 0 15px;
+}
+/* line 261, ../sass/_homepage.scss */
+#index .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+/* line 266, ../sass/_homepage.scss */
+#index .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+/* line 269, ../sass/_homepage.scss */
+#index .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+/* line 272, ../sass/_homepage.scss */
+#index .portfolio-box:focus {
+  outline: none;
+}
+@media (min-width: 768px) {
+  /* line 276, ../sass/_homepage.scss */
+  #index .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  /* line 279, ../sass/_homepage.scss */
+  #index .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+/* line 283, ../sass/_homepage.scss */
+#index .call-to-action h2 {
+  margin: 0 auto 20px;
+}
+/* line 286, ../sass/_homepage.scss */
+#index .text-primary {
+  color: #F05F40;
+}
+/* line 289, ../sass/_homepage.scss */
+#index .no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 293, ../sass/_homepage.scss */
+#index .btn-default {
+  color: #222222;
+  background-color: white;
+  border-color: white;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+/* line 301, ../sass/_homepage.scss */
+#index .btn-default:hover,
+#index .btn-default:focus,
+#index .btn-default.focus,
+#index .btn-default:active,
+#index .btn-default.active,
+#index .open > .dropdown-toggle.btn-default {
+  color: #222222;
+  background-color: #f2f2f2;
+  border-color: #ededed;
+}
+/* line 311, ../sass/_homepage.scss */
+#index .btn-default:active,
+#index .btn-default.active,
+#index .open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+/* line 316, ../sass/_homepage.scss */
+#index .btn-default.disabled,
+#index .btn-default[disabled],
+#index fieldset[disabled] .btn-default,
+#index .btn-default.disabled:hover,
+#index .btn-default[disabled]:hover,
+#index fieldset[disabled] .btn-default:hover,
+#index .btn-default.disabled:focus,
+#index .btn-default[disabled]:focus,
+#index fieldset[disabled] .btn-default:focus,
+#index .btn-default.disabled.focus,
+#index .btn-default[disabled].focus,
+#index fieldset[disabled] .btn-default.focus,
+#index .btn-default.disabled:active,
+#index .btn-default[disabled]:active,
+#index fieldset[disabled] .btn-default:active,
+#index .btn-default.disabled.active,
+#index .btn-default[disabled].active,
+#index fieldset[disabled] .btn-default.active {
+  background-color: white;
+  border-color: white;
+}
+/* line 337, ../sass/_homepage.scss */
+#index .btn-default .badge {
+  color: white;
+  background-color: #222222;
+}
+/* line 341, ../sass/_homepage.scss */
+#index .btn-primary {
+  color: white;
+  background-color: #1a8cf0;
+  border-color: #F05F40;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+/* line 349, ../sass/_homepage.scss */
+#index .btn-primary:hover,
+#index .btn-primary:focus,
+#index .btn-primary.focus,
+#index .btn-primary:active,
+#index .btn-primary.active,
+#index .open > .dropdown-toggle.btn-primary {
+  color: white;
+  background-color: #1a8cf0;
+  border-color: #ed431f;
+}
+/* line 359, ../sass/_homepage.scss */
+#index .btn-primary:active,
+#index .btn-primary.active,
+#index .open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+/* line 364, ../sass/_homepage.scss */
+#index .btn-primary.disabled,
+#index .btn-primary[disabled],
+#index fieldset[disabled] .btn-primary,
+#index .btn-primary.disabled:hover,
+#index .btn-primary[disabled]:hover,
+#index fieldset[disabled] .btn-primary:hover,
+#index .btn-primary.disabled:focus,
+#index .btn-primary[disabled]:focus,
+#index fieldset[disabled] .btn-primary:focus,
+#index .btn-primary.disabled.focus,
+#index .btn-primary[disabled].focus,
+#index fieldset[disabled] .btn-primary.focus,
+#index .btn-primary.disabled:active,
+#index .btn-primary[disabled]:active,
+#index fieldset[disabled] .btn-primary:active,
+#index .btn-primary.disabled.active,
+#index .btn-primary[disabled].active,
+#index fieldset[disabled] .btn-primary.active {
+  background-color: #1a8cf0;
+  border-color: #F05F40;
+}
+/* line 385, ../sass/_homepage.scss */
+#index .btn-primary .badge {
+  color: #1a8cf0;
+  background-color: white;
+}
+/* line 389, ../sass/_homepage.scss */
+#index .btn {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  border: none;
+  border-radius: 300px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 396, ../sass/_homepage.scss */
+#index .btn-xl {
+  padding: 15px 30px;
+}
+/* line 399, ../sass/_homepage.scss */
+#index ::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #222222;
+}
+/* line 404, ../sass/_homepage.scss */
+#index ::selection {
+  color: white;
+  text-shadow: none;
+  background: #222222;
+}
+/* line 409, ../sass/_homepage.scss */
+#index img::selection {
+  color: white;
+  background: transparent;
+}
+/* line 413, ../sass/_homepage.scss */
+#index img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+/* line 417, ../sass/_homepage.scss */
+#index body {
+  webkit-tap-highlight-color: #222222;
+}

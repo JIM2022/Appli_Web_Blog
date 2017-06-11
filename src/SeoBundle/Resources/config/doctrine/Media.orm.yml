@@ -1,0 +1,18 @@
+SeoBundle\Entity\Media:
+    type: entity
+    table: null
+    repositoryClass: SeoBundle\Repository\MediaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        photo:
+            type: string
+            length: 255
+        video:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

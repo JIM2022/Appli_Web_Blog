@@ -1,22 +1,50 @@
+
+
 {% trans_default_domain 'FOSUserBundle' %}
+{% extends "base.html.twig" %}
+{% block body %}
+    <div id="login">
+		{% if error %}
+            <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+		{% endif %}
+        
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-offset-4 col-lg-4 picture_profile">
+                    <img src="https://cdn.thisiswhyimbroke.com/images/stormtrooper-helmet-replica-640x533.jpg">
+                </div>
+            </div>
+            
+            <form action="{{ path("fos_user_security_check") }}" method="post">
+				{% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+				{% endif %}
+                <div class="login row">
+                    <label class="col-sm-2" for="username" {{ 'security.login.username'|trans }}></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Login" id="username" name="_username" value="{{ last_username }}" required="required" />
+                    </div>
+                </div>
+                <div class="mdp row">
+                    <label class="col-sm-2" for="password" {{ 'security.login.password'|trans }}></label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="password" name="_password" placeholder="Password" required="required" />
+                    </div>
+                </div>
+                
+                <div class="col-lg-8 col-lg-offset-2">
+                    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                </div>
+                
+                <div class="col-lg-8 col-lg-offset-2">
+                    <input class="btn btn-success" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                </div>
+            </form>
+        </div>
+    
+    </div>
+{% endblock %}
 
-{% if error %}
-    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-{% endif %}
 
-<form action="{{ path("fos_user_security_check") }}" method="post">
-    {% if csrf_token %}
-        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-    {% endif %}
-
-    <label for="username">{{ 'security.login.username'|trans }}</label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
-
-    <label for="password">{{ 'security.login.password'|trans }}</label>
-    <input type="password" id="password" name="_password" required="required" />
-
-    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
-
-    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
-</form>

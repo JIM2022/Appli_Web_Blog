@@ -16,3 +16,5 @@ SeoBundle\Entity\Media:
             type: string
             length: 255
     lifecycleCallbacks: {  }
+
+

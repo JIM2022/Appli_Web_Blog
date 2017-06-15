@@ -1,0 +1,29 @@
+SeoBundle\Entity\Article:
+    type: entity
+    table: null
+    repositoryClass: SeoBundle\Repository\ArticleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: 255
+        date:
+            type: datetime
+        contenu:
+            type: text
+        lieu:
+            type: string
+            length: 255
+        theme:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
+
+    manyToMany:
+            medias:
+                targetEntity: SeoBundle\Entity\Media

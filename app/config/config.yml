@@ -34,7 +34,7 @@ framework:
     php_errors:
         log: true
 
-# Twig Configuration
+# Twig Configuration & Bootstrap Twig
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'

@@ -665,7 +665,7 @@ body {
   font-size: 68.5%;
 }
 @media screen and (max-width: 50em) {
-  /* line 17, ../sass/_photo.scss */
+  /* line 19, ../sass/_photo.scss */
   #photo_content .grid figure {
     display: inline-block;
     float: none;
@@ -673,21 +673,21 @@ body {
     width: 100%;
   }
 }
-/* line 19, ../sass/_photo.scss */
+/* line 22, ../sass/_photo.scss */
 #photo_content figure.effect-bubba {
   background: #9e5406;
 }
-/* line 20, ../sass/_photo.scss */
+/* line 23, ../sass/_photo.scss */
 #photo_content figure.effect-bubba img {
   opacity: .7;
   -webkit-transition: opacity .35s;
   transition: opacity .35s;
 }
-/* line 21, ../sass/_photo.scss */
+/* line 24, ../sass/_photo.scss */
 #photo_content figure.effect-bubba:hover img {
   opacity: .4;
 }
-/* line 22, ../sass/_photo.scss */
+/* line 25, ../sass/_photo.scss */
 #photo_content figure.effect-bubba figcaption::before, #photo_content figure.effect-bubba figcaption::after {
   position: absolute;
   top: 30px;
@@ -699,21 +699,21 @@ body {
   -webkit-transition: opacity .35s,-webkit-transform .35s;
   transition: opacity .35s,transform .35s;
 }
-/* line 23, ../sass/_photo.scss */
+/* line 26, ../sass/_photo.scss */
 #photo_content figure.effect-bubba figcaption::before {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
 }
-/* line 24, ../sass/_photo.scss */
+/* line 27, ../sass/_photo.scss */
 #photo_content figure.effect-bubba figcaption::after {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
   -webkit-transform: scale(1, 0);
   transform: scale(1, 0);
 }
-/* line 25, ../sass/_photo.scss */
+/* line 28, ../sass/_photo.scss */
 #photo_content figure.effect-bubba h2 {
   padding-top: 30%;
   -webkit-transition: -webkit-transform .35s;
@@ -721,7 +721,7 @@ body {
   -webkit-transform: translate3d(0, -20px, 0);
   transform: translate3d(0, -20px, 0);
 }
-/* line 26, ../sass/_photo.scss */
+/* line 29, ../sass/_photo.scss */
 #photo_content figure.effect-bubba p {
   padding: 20px 2.5em;
   opacity: 0;
@@ -730,13 +730,13 @@ body {
   -webkit-transform: translate3d(0, 20px, 0);
   transform: translate3d(0, 20px, 0);
 }
-/* line 27, ../sass/_photo.scss */
+/* line 30, ../sass/_photo.scss */
 #photo_content figure.effect-bubba:hover figcaption::before, #photo_content figure.effect-bubba:hover figcaption::after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* line 28, ../sass/_photo.scss */
+/* line 31, ../sass/_photo.scss */
 #photo_content figure.effect-bubba:hover h2, #photo_content figure.effect-bubba:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);

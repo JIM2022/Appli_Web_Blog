@@ -13,9 +13,12 @@
   .grid figure h2 span{font-weight:800}
   .grid figure h2,.grid figure p{margin:0}
   .grid figure p{letter-spacing:1px;font-size:68.5%}
-  @media screen and (max-width:50em){
+
+  @media screen and (max-width:50em)
+  {
     .grid figure{display:inline-block;float:none;margin:10px auto;width:100%}
   }
+
   figure.effect-bubba{background:#9e5406}
   figure.effect-bubba img{opacity:.7;-webkit-transition:opacity .35s;transition:opacity .35s}
   figure.effect-bubba:hover img{opacity:.4}

@@ -1,3 +1,7 @@
 seo_homepage:
     path:     /
     defaults: { _controller: SeoBundle:Default:index }
+
+seo_photo:
+    path:     /photos
+    defaults: { _controller: SeoBundle:Media:index }

@@ -1,25 +1,26 @@
-{% extends "base.html.twig" %}
+{% extends "@Seo/Default/layout.html.twig" %}
+{% block nav %}
+<div id="photo_content">
+	{{ parent() }}
+	{% endblock %}
 {% block body %}
-	<div id="photo_content">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				{% for article in articles %}
+				<div class="container_img col-lg-4">
 					<div class="grid">
-						<figure class="effect-bubba">
-							<img src="https://img.planete-starwars.com/_main/bb8.png" alt="img16"/>
+						<figure class="effect-sadie">
+							<img src="{{ asset('uploads/img/' ~ ( article.medias.src )) }}">
 							<figcaption>
-									<h2>Fresh <span>Bubba</span></h2>
-									<p>Bubba likes to appear out of thin air.</p>
-								<a href="#"></a>
+								<h2>{{ article.titre }}</h2>
+									<p>{{ article.date|date('m/d/y') }}  {#{{ article.contenu }}#}</p>
+								<a href="#">View more</a>
 							</figcaption>
 						</figure>
-						{{ form_start(form) }}
-						{{ form_row(form.photo) }}
-						{{ form_end(form) }}
 					</div>
 				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
 {% endblock %}
-

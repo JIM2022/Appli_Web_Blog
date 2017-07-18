@@ -564,13 +564,13 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 
-/* line 1, ../sass/_photo.scss */
-#photo_content {
-  /*  .effect-bubba , img
-  {
-    width: 500px;
-    height: 500px;
-  }*/
+/* line 3, ../sass/_photo.scss */
+#photo_content .navbar-default {
+  background-color: #1a8cf0;
+}
+/* line 6, ../sass/_photo.scss */
+#photo_content .container_img {
+  margin-top: 50px;
 }
 @font-face {
   /* line 1, ../sass/_photo.scss */
@@ -579,14 +579,13 @@ body {
     font-style: normal;
     font-family: 'feathericons';
     src: url("../fonts/feathericons/feathericons.eot?-8is7zf");
-    src: url("../fonts/feathericons/feathericons.eot?#iefix-8is7zf") format("embedded-opentype"), url("../fonts/feathericons/feathericons.woff?-8is7zf") format("woff"), url("../fonts/feathericons/feathericons.ttf?-8is7zf") format("truetype"), url("../fonts/feathericons/feathericons.svg?-8is7zf#feathericons") format("svg");
   }
 }
-/* line 4, ../sass/_photo.scss */
+/* line 16, ../sass/_photo.scss */
 #photo_content *, #photo_content *:after, #photo_content *:before {
   box-sizing: border-box;
 }
-/* line 5, ../sass/_photo.scss */
+/* line 17, ../sass/_photo.scss */
 #photo_content .grid {
   position: relative;
   margin: 0 auto;
@@ -595,7 +594,7 @@ body {
   list-style: none;
   text-align: center;
 }
-/* line 6, ../sass/_photo.scss */
+/* line 18, ../sass/_photo.scss */
 #photo_content .grid figure {
   position: relative;
   float: left;
@@ -609,7 +608,7 @@ body {
   text-align: center;
   cursor: pointer;
 }
-/* line 7, ../sass/_photo.scss */
+/* line 19, ../sass/_photo.scss */
 #photo_content .grid figure img {
   position: relative;
   display: block;
@@ -617,7 +616,7 @@ body {
   max-width: 100%;
   opacity: .8;
 }
-/* line 8, ../sass/_photo.scss */
+/* line 20, ../sass/_photo.scss */
 #photo_content .grid figure figcaption {
   padding: 2em;
   color: #fff;
@@ -626,11 +625,11 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 9, ../sass/_photo.scss */
+/* line 21, ../sass/_photo.scss */
 #photo_content .grid figure figcaption::before, #photo_content .grid figure figcaption::after {
   pointer-events: none;
 }
-/* line 10, ../sass/_photo.scss */
+/* line 22, ../sass/_photo.scss */
 #photo_content .grid figure figcaption, #photo_content .grid figure figcaption > a {
   position: absolute;
   top: 0;
@@ -638,7 +637,7 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 11, ../sass/_photo.scss */
+/* line 23, ../sass/_photo.scss */
 #photo_content .grid figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
@@ -646,26 +645,26 @@ body {
   font-size: 0;
   opacity: 0;
 }
-/* line 12, ../sass/_photo.scss */
+/* line 24, ../sass/_photo.scss */
 #photo_content .grid figure h2 {
   word-spacing: -0.15em;
-  font-weight: 300;
+  font-weight: 800;
 }
-/* line 13, ../sass/_photo.scss */
+/* line 25, ../sass/_photo.scss */
 #photo_content .grid figure h2 span {
   font-weight: 800;
 }
-/* line 14, ../sass/_photo.scss */
+/* line 26, ../sass/_photo.scss */
 #photo_content .grid figure h2, #photo_content .grid figure p {
   margin: 0;
 }
-/* line 15, ../sass/_photo.scss */
+/* line 27, ../sass/_photo.scss */
 #photo_content .grid figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
 @media screen and (max-width: 50em) {
-  /* line 19, ../sass/_photo.scss */
+  /* line 29, ../sass/_photo.scss */
   #photo_content .grid figure {
     display: inline-block;
     float: none;
@@ -673,74 +672,63 @@ body {
     width: 100%;
   }
 }
-/* line 22, ../sass/_photo.scss */
-#photo_content figure.effect-bubba {
-  background: #9e5406;
-}
-/* line 23, ../sass/_photo.scss */
-#photo_content figure.effect-bubba img {
-  opacity: .7;
-  -webkit-transition: opacity .35s;
-  transition: opacity .35s;
-}
-/* line 24, ../sass/_photo.scss */
-#photo_content figure.effect-bubba:hover img {
-  opacity: .4;
-}
-/* line 25, ../sass/_photo.scss */
-#photo_content figure.effect-bubba figcaption::before, #photo_content figure.effect-bubba figcaption::after {
+/* line 33, ../sass/_photo.scss */
+#photo_content figure.effect-sadie figcaption::before {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  bottom: 30px;
-  left: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0, rgba(72, 76, 97, 0.8) 75%);
+  background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0, rgba(72, 76, 97, 0.8) 75%);
   content: '';
   opacity: 0;
+  -webkit-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0);
+}
+/* line 34, ../sass/_photo.scss */
+#photo_content figure.effect-sadie h2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: red;
+  -webkit-transition: -webkit-transform .35s,color .35s;
+  transition: transform .35s,color .35s;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+/* line 35, ../sass/_photo.scss */
+#photo_content figure.effect-sadie figcaption::before, #photo_content figure.effect-sadie p {
   -webkit-transition: opacity .35s,-webkit-transform .35s;
   transition: opacity .35s,transform .35s;
 }
-/* line 26, ../sass/_photo.scss */
-#photo_content figure.effect-bubba figcaption::before {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: scale(0, 1);
-  transform: scale(0, 1);
-}
-/* line 27, ../sass/_photo.scss */
-#photo_content figure.effect-bubba figcaption::after {
-  border-right: 1px solid #fff;
-  border-left: 1px solid #fff;
-  -webkit-transform: scale(1, 0);
-  transform: scale(1, 0);
-}
-/* line 28, ../sass/_photo.scss */
-#photo_content figure.effect-bubba h2 {
-  padding-top: 30%;
-  -webkit-transition: -webkit-transform .35s;
-  transition: transform .35s;
-  -webkit-transform: translate3d(0, -20px, 0);
-  transform: translate3d(0, -20px, 0);
-}
-/* line 29, ../sass/_photo.scss */
-#photo_content figure.effect-bubba p {
-  padding: 20px 2.5em;
+/* line 36, ../sass/_photo.scss */
+#photo_content figure.effect-sadie p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
   opacity: 0;
-  -webkit-transition: opacity .35s,-webkit-transform .35s;
-  transition: opacity .35s,transform .35s;
-  -webkit-transform: translate3d(0, 20px, 0);
-  transform: translate3d(0, 20px, 0);
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
 }
-/* line 30, ../sass/_photo.scss */
-#photo_content figure.effect-bubba:hover figcaption::before, #photo_content figure.effect-bubba:hover figcaption::after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+/* line 37, ../sass/_photo.scss */
+#photo_content figure.effect-sadie:hover h2 {
+  color: #fff;
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
 }
-/* line 31, ../sass/_photo.scss */
-#photo_content figure.effect-bubba:hover h2, #photo_content figure.effect-bubba:hover p {
+/* line 38, ../sass/_photo.scss */
+#photo_content figure.effect-sadie:hover figcaption::before, #photo_content figure.effect-sadie:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+/* line 39, ../sass/_photo.scss */
+#photo_content figure.effect-sadie {
+  height: 350px;
 }
 
 /* line 4, ../sass/_login.scss */

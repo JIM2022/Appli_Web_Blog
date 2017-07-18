@@ -16,14 +16,11 @@ SeoBundle\Entity\Article:
             type: datetime
         contenu:
             type: text
-        lieu:
-            type: string
-            length: 255
-        theme:
-            type: string
-            length: 255
+
     lifecycleCallbacks: {  }
 
-    manyToMany:
-            medias:
-                targetEntity: SeoBundle\Entity\Media
+    manyToOne:
+        medias:
+            targetEntity: SeoBundle\Entity\Media
+            inversedBy: article
+            cascade: ['all']

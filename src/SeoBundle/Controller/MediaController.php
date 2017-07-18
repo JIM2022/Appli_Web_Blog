@@ -2,56 +2,49 @@
 
 namespace SeoBundle\Controller;
 
+use SeoBundle\Entity\Article;
 use SeoBundle\Entity\Media;
+use SeoBundle\Form\ArticleType;
 use SeoBundle\Form\MediaType;
+use SeoBundle\Repository\ArticleRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 class MediaController extends Controller
 {
-    /*public function indexAction(Request $request)
+    public function listAction()
     {
-        $em=$this->getDoctrine()->getEntityManager();
-        $media = $em->getRepository(Media::class)->findAll();
+        $em = $this ->getDoctrine()->getManager();
+        $article = $em ->getRepository(Article::class)->findAll();
 
-        $form=$this->createForm(MediaType::class, $media);
-
-        $form->handleRequest($request);
-
-        if($request->isMethod('post'))
-        {
-            $em->persist($media);
-            $em->flush();
-        }
         return $this->render('@Seo/Default/photos.html.twig', array(
-            'media'=> $media,
-            'form'=> $form->createView()
+            'articles'=>$article
         ));
-    }*/
 
-    public function indexAction(Request $request)
+    }
+
+
+    public function addAction(Request $request)
     {
-        $media = new Media();
+        $article = new Article();
 
-        $form =$this->createForm(MediaType::class, $media);
+        $form =$this->createForm(ArticleType::class, $article);
 
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid())
         {
             $em=$this->getDoctrine()->getManager();
-            $em->persist($media);
+            $em->persist($article);
             $em->flush();
 
-            return $this->redirectToRoute('seo_photo');
+            return $this->redirectToRoute('add');
         }
-        return $this->render('@Seo/Default/photos.html.twig', array(
-            'media'=> $media,
-            'form'=> $form->createView()
+        return $this->render('@Seo/Default/add.html.twig', array (
+            'form' => $form->createView()
 
         ));
 
     }
 
 }
-
 

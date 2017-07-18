@@ -7,8 +7,9 @@ namespace SeoBundle\Entity;
  */
 class Article
 {
+
     /**
-     * @var int
+     * @var integer
      */
     private $id;
 
@@ -28,20 +29,15 @@ class Article
     private $contenu;
 
     /**
-     * @var string
+     * @var \SeoBundle\Entity\Media
      */
-    private $lieu;
-
-    /**
-     * @var string
-     */
-    private $theme;
+    private $medias;
 
 
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -121,93 +117,23 @@ class Article
     }
 
     /**
-     * Set lieu
+     * Set medias
      *
-     * @param string $lieu
-     *
-     * @return Article
-     */
-    public function setLieu($lieu)
-    {
-        $this->lieu = $lieu;
-
-        return $this;
-    }
-
-    /**
-     * Get lieu
-     *
-     * @return string
-     */
-    public function getLieu()
-    {
-        return $this->lieu;
-    }
-
-    /**
-     * Set theme
-     *
-     * @param string $theme
+     * @param \SeoBundle\Entity\Media $medias
      *
      * @return Article
      */
-    public function setTheme($theme)
+    public function setMedias(\SeoBundle\Entity\Media $medias = null)
     {
-        $this->theme = $theme;
+        $this->medias = $medias;
 
         return $this;
-    }
-
-    /**
-     * Get theme
-     *
-     * @return string
-     */
-    public function getTheme()
-    {
-        return $this->theme;
-    }
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $medias;
-
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->medias = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * Add media
-     *
-     * @param \SeoBundle\Entity\Media $media
-     *
-     * @return Article
-     */
-    public function addMedia(\SeoBundle\Entity\Media $media)
-    {
-        $this->medias[] = $media;
-
-        return $this;
-    }
-
-    /**
-     * Remove media
-     *
-     * @param \SeoBundle\Entity\Media $media
-     */
-    public function removeMedia(\SeoBundle\Entity\Media $media)
-    {
-        $this->medias->removeElement($media);
     }
 
     /**
      * Get medias
      *
-     * @return \Doctrine\Common\Collections\Collection
+     * @return \SeoBundle\Entity\Media
      */
     public function getMedias()
     {

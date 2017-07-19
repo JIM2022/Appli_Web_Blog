@@ -24,7 +24,9 @@ class ArticleType extends AbstractType
                 'label' => false,
                 'required' => false
             ))
-        ->add('send', SubmitType::class)
+        ->add('send', SubmitType::class, array(
+            'label'=>'Valider'
+        ))
             ;
     }
     /**

@@ -4,7 +4,7 @@ homepage:
 
 photo:
     path:     /photos
-    defaults: { _controller: SeoBundle:Media:list }
+    defaults: { _controller: SeoBundle:Media:pictureForm }
 
 add:
     path:     /photos/add

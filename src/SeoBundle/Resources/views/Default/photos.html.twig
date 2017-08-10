@@ -17,23 +17,26 @@
 	{% if is_granted('ROLE_ADMIN') %}
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2 col-lg-offset-5">
+				<div class="col-lg-3 col-lg-offset-5">
 					<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Ajout Destination</button>
 				</div>
 			</div>
-			<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal fade bd-example-modal-lg"  aria-hidden="true">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
 						<div class="container">
 							{{ form_start(form) }}
-							<div class="row col-lg-9">
+							<div class="row col-lg-9 center-block">
 								{{ form_row(form.titre) }}
 							</div>
-							<div class="row col-lg-9">
+							<div class="row col-lg-9 center-block">
 								{{ form_row(form.contenu, {'attr': {'class': 'form-control'}}) }}
 							</div>
 							<div class="row col-lg-9">
 								{{ form_row(form.date ) }}
+							</div>
+							<div class="row col-lg-9">
+								{{ form_row(form.medias ) }}
 							</div>
 							<div class="row col-lg-9">
 								{{ form_widget(form.send ,{ 'attr': {'class': 'btn btn-success center-block' }}) }}
@@ -54,7 +57,7 @@
 								<img class="img" src="{{ asset('uploads/img/' ~ ( article.medias.src )) }}">
 								<figcaption>
 									<h2 class="font-italic">{{ article.titre }}</h2>
-										<p class="font-italic">{{ article.date|date('m/d/y') }}  {#{{ article.contenu }}#}</p>
+										<p class="font-italic">{{ article.date|date('m/d/y') }}  {{ article.contenu }}</p>
 									<a class="center-block" href="#">View more</a>
 								</figcaption>
 							</figure>

@@ -595,11 +595,12 @@ body {
 }
 /* line 16, ../sass/_photo.scss */
 #photo_content .title_container {
+  padding: 0;
   margin-top: 150px;
   margin-right: 0;
   margin-left: 0;
 }
-/* line 23, ../sass/_photo.scss */
+/* line 24, ../sass/_photo.scss */
 #photo_content .title_container .caption h2 {
   text-transform: uppercase;
   font-weight: 800;
@@ -607,9 +608,9 @@ body {
   color: white;
   position: absolute;
   bottom: 50%;
-  right: 40%;
+  right: 42%;
 }
-/* line 34, ../sass/_photo.scss */
+/* line 35, ../sass/_photo.scss */
 #photo_content .title_img {
   height: 300px;
   width: 100%;
@@ -622,11 +623,11 @@ body {
     font-family: 'feathericons';
   }
 }
-/* line 46, ../sass/_photo.scss */
+/* line 47, ../sass/_photo.scss */
 #photo_content *, #photo_content *:after, #photo_content *:before {
   box-sizing: border-box;
 }
-/* line 47, ../sass/_photo.scss */
+/* line 48, ../sass/_photo.scss */
 #photo_content .grid {
   position: relative;
   margin: 0 auto;
@@ -635,7 +636,7 @@ body {
   list-style: none;
   text-align: center;
 }
-/* line 48, ../sass/_photo.scss */
+/* line 49, ../sass/_photo.scss */
 #photo_content .grid figure {
   position: relative;
   float: left;
@@ -649,7 +650,7 @@ body {
   text-align: center;
   cursor: pointer;
 }
-/* line 49, ../sass/_photo.scss */
+/* line 50, ../sass/_photo.scss */
 #photo_content .grid figure img {
   position: relative;
   display: block;
@@ -657,7 +658,7 @@ body {
   max-width: 100%;
   opacity: .8;
 }
-/* line 50, ../sass/_photo.scss */
+/* line 51, ../sass/_photo.scss */
 #photo_content .grid figure figcaption {
   padding: 2em;
   color: #fff;
@@ -666,11 +667,11 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 51, ../sass/_photo.scss */
+/* line 52, ../sass/_photo.scss */
 #photo_content .grid figure figcaption::before, #photo_content .grid figure figcaption::after {
   pointer-events: none;
 }
-/* line 52, ../sass/_photo.scss */
+/* line 53, ../sass/_photo.scss */
 #photo_content .grid figure figcaption, #photo_content .grid figure figcaption > a {
   position: absolute;
   top: 0;
@@ -678,7 +679,7 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 53, ../sass/_photo.scss */
+/* line 54, ../sass/_photo.scss */
 #photo_content .grid figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
@@ -686,26 +687,26 @@ body {
   font-size: 0;
   opacity: 0;
 }
-/* line 54, ../sass/_photo.scss */
+/* line 55, ../sass/_photo.scss */
 #photo_content .grid figure h2 {
   word-spacing: -0.15em;
   font-weight: 800;
 }
-/* line 55, ../sass/_photo.scss */
+/* line 56, ../sass/_photo.scss */
 #photo_content .grid figure h2 span {
   font-weight: 800;
 }
-/* line 56, ../sass/_photo.scss */
+/* line 57, ../sass/_photo.scss */
 #photo_content .grid figure h2, #photo_content .grid figure p {
   margin: 0;
 }
-/* line 57, ../sass/_photo.scss */
+/* line 58, ../sass/_photo.scss */
 #photo_content .grid figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
 @media screen and (max-width: 50em) {
-  /* line 59, ../sass/_photo.scss */
+  /* line 60, ../sass/_photo.scss */
   #photo_content .grid figure {
     display: inline-block;
     float: none;
@@ -713,11 +714,11 @@ body {
     width: 100%;
   }
 }
-/* line 77, ../sass/_photo.scss */
+/* line 78, ../sass/_photo.scss */
 #photo_content figure.effect-apollo {
   background: #3498db;
 }
-/* line 78, ../sass/_photo.scss */
+/* line 79, ../sass/_photo.scss */
 #photo_content figure.effect-apollo img {
   opacity: .95;
   -webkit-transition: opacity .35s,-webkit-transform .35s;
@@ -725,7 +726,7 @@ body {
   -webkit-transform: scale3d(1.05, 1.05, 1);
   transform: scale3d(1.05, 1.05, 1);
 }
-/* line 79, ../sass/_photo.scss */
+/* line 80, ../sass/_photo.scss */
 #photo_content figure.effect-apollo figcaption::before {
   position: absolute;
   top: 0;
@@ -739,7 +740,7 @@ body {
   -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
 }
-/* line 80, ../sass/_photo.scss */
+/* line 81, ../sass/_photo.scss */
 #photo_content figure.effect-apollo p {
   position: absolute;
   right: 0;
@@ -753,28 +754,28 @@ body {
   -webkit-transition: opacity .35s;
   transition: opacity .35s;
 }
-/* line 81, ../sass/_photo.scss */
+/* line 82, ../sass/_photo.scss */
 #photo_content figure.effect-apollo h2 {
   text-align: left;
 }
-/* line 82, ../sass/_photo.scss */
+/* line 83, ../sass/_photo.scss */
 #photo_content figure.effect-apollo:hover img {
   opacity: .6;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
-/* line 83, ../sass/_photo.scss */
+/* line 84, ../sass/_photo.scss */
 #photo_content figure.effect-apollo:hover figcaption::before {
   -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
 }
-/* line 84, ../sass/_photo.scss */
+/* line 85, ../sass/_photo.scss */
 #photo_content figure.effect-apollo:hover p {
   opacity: 1;
   -webkit-transition-delay: .1s;
   transition-delay: .1s;
 }
-/* line 85, ../sass/_photo.scss */
+/* line 86, ../sass/_photo.scss */
 #photo_content figure.effect-apollo {
   height: 350px;
 }

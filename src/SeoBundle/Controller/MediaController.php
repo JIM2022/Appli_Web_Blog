@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class MediaController extends Controller
 {
-    /*public function listAction()
+    public function listAction()
     {
         $em = $this ->getDoctrine()->getManager();
         $article = $em ->getRepository(Article::class)->findAll();
@@ -44,7 +44,7 @@ class MediaController extends Controller
 
         ));
 
-    }*/
+    }
 
     public function pictureFormAction(Request $request)
     {

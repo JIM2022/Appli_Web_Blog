@@ -1,17 +1,18 @@
 #photo_content
 {
-
-  .navbar-default {
+  .navbar-default
+  {
     background-color: #1a8cf0;
   }
-.container_img
-{
-  margin-top: 50px;
-}
+
   .img_box
   {
     margin-right: 0;
     margin-left: 0;
+  }
+  .container_img
+  {
+    margin-top: 50px;
   }
   .title_container
   {
@@ -34,7 +35,6 @@
   }
   .title_img
   {
-
     height: 300px;
     width: 100%;
   }
@@ -58,6 +58,7 @@
   .grid figure p{letter-spacing:1px;font-size:68.5%}
   @media screen and (max-width:50em){
     .grid figure{display:inline-block;float:none;margin:10px auto;width:100%}
+
   }
 
                     /*EFFET SADIE*/
@@ -86,4 +87,15 @@
   figure.effect-apollo {
     height: 350px;
   }
+
+// Modal Add Destinations
+  .title-form
+  {
+    margin-top: 50px;
+  }
+  .submit-form
+  {
+    margin-bottom: 30px;
+  }
+
 }

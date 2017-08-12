@@ -21,12 +21,12 @@
 					<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Ajout Destination</button>
 				</div>
 			</div>
-			<div class="modal fade bd-example-modal-lg"  aria-hidden="true">
+			<div class="modal fade bd-example-modal-lg" aria-hidden="true">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
 						<div class="container">
 							{{ form_start(form) }}
-							<div class="row col-lg-9 center-block">
+							<div class="row col-lg-9 center-block title-form">
 								{{ form_row(form.titre) }}
 							</div>
 							<div class="row col-lg-9 center-block">
@@ -38,7 +38,7 @@
 							<div class="row col-lg-9">
 								{{ form_row(form.medias ) }}
 							</div>
-							<div class="row col-lg-9">
+							<div class="row col-lg-9 submit-form">
 								{{ form_widget(form.send ,{ 'attr': {'class': 'btn btn-success center-block' }}) }}
 							</div>
 							{{ form_end(form) }}

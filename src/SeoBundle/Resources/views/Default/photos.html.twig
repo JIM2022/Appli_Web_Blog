@@ -61,10 +61,16 @@
 									<a class="center-block" href="#">View more</a>
 								</figcaption>
 							</figure>
+							{% if is_granted('ROLE_ADMIN') %}
+								{#Edit Destination#}
+									<a type="button" class="btn btn-primary" href="{{ path('photo_edit', { 'id': article.id }) }}">Edition</a>
+								{#Delete Destination#}
+									<a type="button" class="btn btn-danger" href="{{ path('photo_delete', {'id': article.id}) }}">Effacer</a>
+							{% endif %}
 						</div>
 					</div>
 					{% endfor %}
 				</div>
 			</div>
 		</div>
-	{% endblock %}
+{% endblock %}

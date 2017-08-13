@@ -4,7 +4,18 @@ homepage:
 
 photo:
     path:     /photos
-    defaults: { _controller: SeoBundle:Media:pictureForm }
+    defaults: { _controller: SeoBundle:Media:destinationForm }
+
+photo_edit:
+    path:     /{id}/edit
+    defaults: { _controller: SeoBundle:Media:destinationEdit }
+    methods:  [GET, POST]
+
+photo_delete:
+    path:     /{id}/delete
+    defaults: { _controller: SeoBundle:Media:destinationDelete }
+    requirements:
+        id: '\d+'
 
 add:
     path:     /photos/add

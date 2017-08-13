@@ -1,0 +1,76 @@
+{% extends "@Seo/Default/layout.html.twig" %}
+{% block nav %}
+<div id="photo_content">
+	{{ parent() }}
+{% endblock %}
+	{% block body %}
+		<div class="container-fluid">
+			<div class="row">
+				<div class="title_container col-lg-12 col-centered">
+					<img class="title_img" src="{{ asset('bundles/seo/assets/img/portfolio/fullsize/IMG_2544.JPG') }}">
+						<div class="caption">
+							<h2>Destinations</h2>
+						</div>
+				</div>
+			</div>
+		</div>
+	{% if is_granted('ROLE_ADMIN') %}
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-lg-offset-5">
+					<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Ajout Destination</button>
+				</div>
+			</div>
+			<div class="modal fade bd-example-modal-lg" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="container">
+							{{ form_start(form) }}
+							<div class="row col-lg-9 center-block title-form">
+								{{ form_row(form.titre) }}
+							</div>
+							<div class="row col-lg-9 center-block">
+								{{ form_row(form.contenu, {'attr': {'class': 'form-control'}}) }}
+							</div>
+							<div class="row col-lg-9">
+								{{ form_row(form.date ) }}
+							</div>
+							<div class="row col-lg-9">
+								{{ form_row(form.medias ) }}
+							</div>
+							<div class="row col-lg-9 submit-form">
+								{{ form_widget(form.send ,{ 'attr': {'class': 'btn btn-success center-block' }}) }}
+							</div>
+							{{ form_end(form) }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+			<div class="container-fluid">
+				<div class="row img_box">
+					{% for article in articles %}
+					<div class="container_img col-lg-3">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<img class="img" src="{{ asset('uploads/img/' ~ ( article.medias.src )) }}">
+								<figcaption>
+									<h2 class="font-italic">{{ article.titre }}</h2>
+										<p class="font-italic">{{ article.date|date('m/d/y') }}  {{ article.contenu }}</p>
+									<a class="center-block" href="#">View more</a>
+								</figcaption>
+							</figure>
+							{% if is_granted('ROLE_ADMIN') %}
+								{#Edit Destination#}
+									<a type="button" class="btn btn-primary" href="{{ path('photo_edit', { 'id': article.id }) }}">Edition</a>
+								{#Delete Destination#}
+									<a type="button" class="btn btn-danger" href="{{ path('photo_delete', {'id': article.id}) }}">Effacer</a>
+							{% endif %}
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+{% endblock %}

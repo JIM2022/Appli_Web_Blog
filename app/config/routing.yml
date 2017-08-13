@@ -1,3 +1,7 @@
+blog:
+    resource: "@BlogBundle/Resources/config/routing.yml"
+    prefix:   /blog
+
 seo:
     resource: "@SeoBundle/Resources/config/routing.yml"
     prefix:   /

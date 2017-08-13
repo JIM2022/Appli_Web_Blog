@@ -1,5 +1,4 @@
 {% extends 'base.html.twig' %}
-
 {% block nav %}
 	<div id="page-top">
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -17,16 +16,19 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a class="page-scroll" href="#about">About</a>
+							<a class="page-scroll" href="{{ path('homepage') }}">Home</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#services">Menu</a>
+							<a class="page-scroll" href="#services">TEST</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#portfolio">Portfolio</a>
+							<a class="page-scroll" href="#portfolio">TEST</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#contact">Contact</a>
+							<a class="page-scroll" href="{{ path('homepage') }}#contact">contact</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="{{  path('fos_user_security_login')}}">Login</a>
 						</li>
 					</ul>
 				</div>
@@ -46,4 +48,8 @@
 			</div>
 		</header>
 
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('bundles/seo/assets/js/creative.js') }}"></script>
 {% endblock %}

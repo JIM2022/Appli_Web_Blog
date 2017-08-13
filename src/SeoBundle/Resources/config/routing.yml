@@ -1,3 +1,22 @@
-seo_homepage:
+homepage:
     path:     /
     defaults: { _controller: SeoBundle:Default:index }
+
+photo:
+    path:     /photos
+    defaults: { _controller: SeoBundle:Media:destinationForm }
+
+photo_edit:
+    path:     /{id}/edit
+    defaults: { _controller: SeoBundle:Media:destinationEdit }
+    methods:  [GET, POST]
+
+photo_delete:
+    path:     /{id}/delete
+    defaults: { _controller: SeoBundle:Media:destinationDelete }
+    requirements:
+        id: '\d+'
+
+add:
+    path:     /photos/add
+    defaults: { _controller: SeoBundle:Media:add }

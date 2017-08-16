@@ -1,0 +1,82 @@
+{% extends "@Seo/Default/layout.html.twig" %}
+{% block nav %}
+<div id="blog_content">
+  {{ parent() }}
+  {% endblock %}
+  
+  {% block body %}
+	  {% for post in posts %}
+    <div class="fond">
+      <div class="card">
+        <div class="thumbnail">
+			<img class="left" src="{{ asset('uploads/img/' ~ ( post.medias.src )) }}">
+		 </div>
+        <div class="right">
+          <h3 class="title-post">{{ post.titre }}</h3>
+            <div class="author">
+	            <img src="{{ asset('bundles/seo/assets/img/portfolio/fullsize/stormtrooper.jpeg') }}"/>
+	            <h2>Jim</h2>
+            </div>
+             <div class="separator">
+              </div>
+             <p>{{ post.contenu}}</p>
+        </div>
+        <h5>{{ post.date|date("d") }}</h5>
+          <h6>{{ post.date|date("M") }}</h6>
+            <ul>
+            {#TODO A définir#}
+              <li><i class="fa fa-eye fa-2x"></i></li>
+              <li><i class="fa fa-heart-o fa-2x"></i></li>
+              <li><i class="fa fa-envelope-o fa-2x"></i></li>
+              <li><i class="fa fa-share-alt fa-2x"></i></li>
+            </ul>
+          <div class="fab">
+            <i class="fa fa-arrow-down fa-3x"></i>Suite
+          </div>
+      </div>
+	    {% if is_granted('ROLE_ADMIN') %}
+		    <div class="row btn">
+			    {#Edit Post#}
+			    <a type="button" class="btn btn-primary col-lg-6 col-lg-offset-1" href="{{ path('blog_edit', { 'id': post.id }) }}">Edition</a>
+			    {#Delete Post#}
+			    <a type="button" class="btn btn-danger" href="{{ path('blog_delete', {'id': post.id}) }}">Effacer</a>
+		    </div>
+	    {% endif %}
+    </div>
+    {% endfor %}
+    {% if is_granted('ROLE_ADMIN') %}
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-lg-offset-5">
+					<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Ajouter un Post</button>
+				</div>
+			</div>
+			<div class="modal fade bd-example-modal-lg" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="container">
+							{{ form_start(form) }}
+							<div class="row col-lg-9 center-block title-form">
+								{{ form_row(form.titre) }}
+							</div>
+							<div class="row col-lg-9 center-block">
+								{{ form_row(form.contenu, {'attr': {'class': 'form-control'}}) }}
+							</div>
+							<div class="row col-lg-9 center-block">
+								{{ form_row(form.date ) }}
+							</div>
+							<div class="row col-lg-9 center-block">
+								{{ form_row(form.medias ) }}
+							</div>
+							<div class="row col-lg-9 submit-form">
+								{{ form_widget(form.send ,{ 'attr': {'class': 'btn btn-success center-block' }}) }}
+							</div>
+							{{ form_end(form) }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+</div>
+  {% endblock %}

@@ -35,5 +35,8 @@ SeoBundle\Entity\Media:
         article:
             targetEntity: SeoBundle\Entity\Article
             mappedBy: medias
+        post:
+            targetEntity: SeoBundle\Entity\Post
+            mappedBy: medias
 
 

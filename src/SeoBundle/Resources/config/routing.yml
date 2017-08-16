@@ -2,8 +2,28 @@ homepage:
     path:     /
     defaults: { _controller: SeoBundle:Default:index }
 
+
+
+blog_index:
+    path:     /Actu
+    defaults: { _controller: SeoBundle:Blog:indexForm }
+
+blog_edit:
+    path:     /{id}/edit
+    defaults: { _controller: SeoBundle:Blog:editPost }
+    methods:  [GET, POST]
+
+blog_delete:
+    path:     /{id}/delete
+    defaults: { _controller: SeoBundle:Blog:deletePost }
+    requirements:
+        id: '\d+'
+
+
+
+
 photo:
-    path:     /photos
+    path:     /Photos
     defaults: { _controller: SeoBundle:Media:destinationForm }
 
 photo_edit:
@@ -17,6 +37,3 @@ photo_delete:
     requirements:
         id: '\d+'
 
-add:
-    path:     /photos/add
-    defaults: { _controller: SeoBundle:Media:add }

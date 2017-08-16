@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	<div class="container">
+		{{ form_start(form) }}
+		<div class="row col-lg-9 center-block title-form">
+			{{ form_label (form.titre) }}
+			{{ form_widget (form.titre) }}
+			{{ form_errors (form.titre) }}
+		</div>
+		<div class="row col-lg-9 center-block">
+			{{ form_label (form.titre) }}
+			{{ form_widget (form.contenu, {'attr': {'class': 'form-control'}}) }}
+			{{ form_errors (form.titre) }}
+		</div>
+		<div class="row col-lg-9 center-block">
+			{{ form_label (form.date) }}
+			{{ form_widget (form.date) }}
+			{{ form_errors (form.date) }}
+		</div>
+		<div class="row col-lg-9 center-block">
+			{{ form_label (form.medias) }}
+			{{ form_widget (form.medias) }}
+			{{ form_errors (form.medias) }}
+		</div>
+		<div class="row col-lg-9 submit-form">
+			{{ form_widget(form.send ,{ 'attr': {'class': 'btn btn-success center-block' }}) }}
+		</div>
+		{{ form_end(form) }}
+	</div>
+{% endblock %}

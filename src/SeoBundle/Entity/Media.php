@@ -209,4 +209,43 @@ class Media
     {
         return $this->article;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $post;
+
+
+    /**
+     * Add post
+     *
+     * @param \SeoBundle\Entity\Post $post
+     *
+     * @return Media
+     */
+    public function addPost(\SeoBundle\Entity\Post $post)
+    {
+        $this->post[] = $post;
+
+        return $this;
+    }
+
+    /**
+     * Remove post
+     *
+     * @param \SeoBundle\Entity\Post $post
+     */
+    public function removePost(\SeoBundle\Entity\Post $post)
+    {
+        $this->post->removeElement($post);
+    }
+
+    /**
+     * Get post
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getPost()
+    {
+        return $this->post;
+    }
 }

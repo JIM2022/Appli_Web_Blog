@@ -10,14 +10,14 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class ArticleType extends AbstractType
+class PostType extends AbstractType
 {
     /**
      * {@inheritdoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('titre', TextType::class )
+        $builder->add('titre',TextType::class)
             ->add('date', DateType::class, array(
                 'widget' => 'single_text',
             ))
@@ -26,17 +26,18 @@ class ArticleType extends AbstractType
                 'label' => false,
                 'required' => true
             ))
-             ->add('send', SubmitType::class, array(
-                 'label'=>'Valider'
+            ->add('send', SubmitType::class, array(
+                'label'=>'Valider'
             ));
     }
+    
     /**
      * {@inheritdoc}
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'SeoBundle\Entity\Article'
+            'data_class' => 'SeoBundle\Entity\Post'
         ));
     }
 
@@ -45,7 +46,7 @@ class ArticleType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'seobundle_article';
+        return 'seobundle_post';
     }
 
 

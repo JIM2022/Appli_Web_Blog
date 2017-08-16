@@ -32,10 +32,10 @@
 							<div class="row col-lg-9 center-block">
 								{{ form_row(form.contenu, {'attr': {'class': 'form-control'}}) }}
 							</div>
-							<div class="row col-lg-9">
+							<div class="row col-lg-9 center-block">
 								{{ form_row(form.date ) }}
 							</div>
-							<div class="row col-lg-9">
+							<div class="row col-lg-9 center-block">
 								{{ form_row(form.medias ) }}
 							</div>
 							<div class="row col-lg-9 submit-form">
@@ -62,10 +62,12 @@
 								</figcaption>
 							</figure>
 							{% if is_granted('ROLE_ADMIN') %}
+								<div class="row btn">
 								{#Edit Destination#}
 									<a type="button" class="btn btn-primary" href="{{ path('photo_edit', { 'id': article.id }) }}">Edition</a>
 								{#Delete Destination#}
 									<a type="button" class="btn btn-danger" href="{{ path('photo_delete', {'id': article.id}) }}">Effacer</a>
+								</div>
 							{% endif %}
 						</div>
 					</div>
@@ -74,3 +76,4 @@
 			</div>
 		</div>
 {% endblock %}
+

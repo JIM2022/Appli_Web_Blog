@@ -789,6 +789,218 @@ body {
   margin-bottom: 30px;
 }
 
+/* line 1, ../sass/_blog.scss */
+#blog_content {
+  /* NavBar*/
+  /*Position Title Photo*/
+  /*Card*/
+  @import url(https://fonts.googleapis.com/css?family=Roboto);
+  /*Just the background stuff */
+  /*My hum... body.. yeah.. */
+  /* The card */
+  /* Image on the left side */
+  /*object-fit: cover; */
+  /*object-position: center; */
+  /* Right side of the card */
+  /*Title card*/
+  /* DATE of release */
+  /* Those futur buttons */
+  /* Floating action button */
+}
+/* line 4, ../sass/_blog.scss */
+#blog_content .navbar-default {
+  background-color: green;
+}
+/* line 9, ../sass/_blog.scss */
+#blog_content .img_box {
+  margin-right: 0;
+  margin-left: 0;
+}
+/* line 14, ../sass/_blog.scss */
+#blog_content .container_img {
+  margin-top: 50px;
+}
+/* line 18, ../sass/_blog.scss */
+#blog_content .title_container {
+  padding: 0;
+  margin-top: 150px;
+  margin-right: 0;
+  margin-left: 0;
+}
+/* line 26, ../sass/_blog.scss */
+#blog_content .title_container .caption h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3em;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  right: 42%;
+}
+/* line 37, ../sass/_blog.scss */
+#blog_content .title_img {
+  height: 300px;
+  width: 100%;
+}
+@font-face {
+  /* line 1, ../sass/_blog.scss */
+  #blog_content {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'feathericons';
+  }
+}
+/* line 54, ../sass/_blog.scss */
+#blog_content span.s1 {
+  position: absolute;
+  top: 0;
+  font-size: 15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #3C4447;
+}
+/* line 63, ../sass/_blog.scss */
+#blog_content span.s2 {
+  font-weight: 800;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 15rem;
+  text-transform: uppercase;
+  color: #3C4447;
+}
+/* line 74, ../sass/_blog.scss */
+#blog_content body {
+  background-color: #353B3F;
+  font-family: "Roboto", sans-serif;
+}
+/* line 80, ../sass/_blog.scss */
+#blog_content .card {
+  position: relative;
+  height: 450px;
+  width: 900px;
+  margin: 200px auto;
+  background-color: #FFF;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 92, ../sass/_blog.scss */
+#blog_content .thumbnail {
+  float: left;
+  position: relative;
+  left: 30px;
+  top: -30px;
+  height: 320px;
+  width: 530px;
+  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+/* line 107, ../sass/_blog.scss */
+#blog_content img.left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 119, ../sass/_blog.scss */
+#blog_content .right {
+  margin-left: 590px;
+  margin-right: 20px;
+}
+/* line 124, ../sass/_blog.scss */
+#blog_content .title-post {
+  padding-top: 15px;
+  font-size: 3em;
+  color: #4B4B4B;
+}
+/* line 131, ../sass/_blog.scss */
+#blog_content .author {
+  background-color: #9ECAFF;
+  height: 30px;
+  width: 110px;
+  border-radius: 20px;
+}
+/* line 138, ../sass/_blog.scss */
+#blog_content .author > img {
+  padding-top: 5px;
+  margin-left: 10px;
+  float: left;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+/* line 147, ../sass/_blog.scss */
+#blog_content h2 {
+  padding-top: 8px;
+  margin-right: 12px;
+  text-align: right;
+  font-size: 1.1em;
+}
+/* line 154, ../sass/_blog.scss */
+#blog_content .separator {
+  margin-top: 10px;
+  border: 1px solid #C3C3C3;
+}
+/* line 159, ../sass/_blog.scss */
+#blog_content p {
+  text-align: justify;
+  padding-top: 10px;
+  font-size: 1em;
+  line-height: 150%;
+  color: #4B4B4B;
+}
+/* line 168, ../sass/_blog.scss */
+#blog_content h5 {
+  position: absolute;
+  left: 30px;
+  bottom: -120px;
+  font-size: 6rem;
+  color: #C3C3C3;
+}
+/* line 176, ../sass/_blog.scss */
+#blog_content h6 {
+  position: absolute;
+  left: 30px;
+  bottom: -55px;
+  font-size: 2rem;
+  color: #C3C3C3;
+}
+/* line 185, ../sass/_blog.scss */
+#blog_content ul {
+  margin-left: 250px;
+}
+/* line 189, ../sass/_blog.scss */
+#blog_content li {
+  display: inline;
+  list-style: none;
+  padding-right: 40px;
+  color: #7B7B7B;
+}
+/* line 197, ../sass/_blog.scss */
+#blog_content .fab {
+  position: absolute;
+  right: 50px;
+  bottom: -40px;
+  box-sizing: border-box;
+  padding-top: 18px;
+  background-color: #1875D0;
+  width: 80px;
+  height: 80px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
 /* line 4, ../sass/_login.scss */
 #login .picture_profile img {
   height: 450px;
@@ -801,6 +1013,11 @@ body {
 /* line 13, ../sass/_login.scss */
 #login .mdp {
   margin-top: 30px;
+}
+
+/* line 3, ../sass/_page-top.scss */
+#page-top a:link {
+  text-decoration: none;
 }
 
 /* line 3, ../sass/_register-content.scss */

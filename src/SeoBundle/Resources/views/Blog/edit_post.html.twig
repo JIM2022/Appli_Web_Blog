@@ -1,30 +1,52 @@
 {% extends 'base.html.twig' %}
 {% block body %}
+<div id="blog_content">
 	<div class="container">
 		{{ form_start(form) }}
-		<div class="row col-lg-9 center-block title-form">
+		<div class="row col-lg-12 center-block title-form">
 			{{ form_label (form.titre) }}
 			{{ form_widget (form.titre) }}
 			{{ form_errors (form.titre) }}
 		</div>
-		<div class="row col-lg-9 center-block">
-			{{ form_label (form.titre) }}
+		<div class="row col-lg-12 center-block">
+			{{ form_label (form.contenu) }}
 			{{ form_widget (form.contenu, {'attr': {'class': 'form-control'}}) }}
-			{{ form_errors (form.titre) }}
+			{{ form_errors (form.contenu) }}
 		</div>
-		<div class="row col-lg-9 center-block">
+		<div class="row col-lg-12 center-block">
 			{{ form_label (form.date) }}
 			{{ form_widget (form.date) }}
 			{{ form_errors (form.date) }}
 		</div>
-		<div class="row col-lg-9 center-block">
+		<div class="row col-lg-12 center-block">
 			{{ form_label (form.medias) }}
 			{{ form_widget (form.medias) }}
 			{{ form_errors (form.medias) }}
+		</div>
+		<div class="row col-lg-12 center-block title-form">
+			{{ form_label (form.sousTitre1) }}
+			{{ form_widget (form.sousTitre1) }}
+			{{ form_errors (form.sousTitre1) }}
+		</div>
+		<div class="row col-lg-12 center-block">
+			{{ form_label (form.contenu1) }}
+			{{ form_widget (form.contenu1, {'attr': {'class': 'form-control'}}) }}
+			{{ form_errors (form.contenu1) }}
+		</div>
+		<div class="row col-lg-12 center-block title-form">
+			{{ form_label (form.sousTitre2) }}
+			{{ form_widget (form.sousTitre2) }}
+			{{ form_errors (form.sousTitre2) }}
+		</div>
+		<div class="row col-lg-12 center-block">
+			{{ form_label (form.contenu2) }}
+			{{ form_widget (form.contenu2, {'attr': {'class': 'form-control'}}) }}
+			{{ form_errors (form.contenu2) }}
 		</div>
 		<div class="row col-lg-9 submit-form">
 			{{ form_widget(form.send ,{ 'attr': {'class': 'btn btn-success center-block' }}) }}
 		</div>
 		{{ form_end(form) }}
 	</div>
+</div>
 {% endblock %}

@@ -31,7 +31,9 @@
               <li><i class="fa fa-share-alt fa-2x"></i></li>
             </ul>
           <div class="fab">
-            <i class="fa fa-arrow-down fa-3x"></i>Suite
+	            <a href="{{ path('blog_actu', { 'id': post.id }) }}">
+		            <i class="fa fa-arrow-down fa-3x"></i>Suite
+	            </a>
           </div>
       </div>
 	    {% if is_granted('ROLE_ADMIN') %}
@@ -67,6 +69,18 @@
 							</div>
 							<div class="row col-lg-9 center-block">
 								{{ form_row(form.medias ) }}
+							</div>
+							<div class="row col-lg-9 center-block title-form">
+								{{ form_row(form.sousTitre1) }}
+							</div>
+							<div class="row col-lg-9 center-block">
+								{{ form_row(form.contenu1, {'attr': {'class': 'form-control'}}) }}
+							</div>
+							<div class="row col-lg-9 center-block title-form">
+								{{ form_row(form.sousTitre2) }}
+							</div>
+							<div class="row col-lg-9 center-block">
+								{{ form_row(form.contenu2, {'attr': {'class': 'form-control'}}) }}
 							</div>
 							<div class="row col-lg-9 submit-form">
 								{{ form_widget(form.send ,{ 'attr': {'class': 'btn btn-success center-block' }}) }}

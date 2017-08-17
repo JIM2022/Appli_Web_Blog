@@ -74,4 +74,20 @@ class BlogController extends Controller
         return $this->redirectToRoute('blog_index');
 
     }
+
+    /**
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function actuAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $posts = $em->getRepository(Post::class)->findById($id);
+
+        return $this->render('@Seo/Blog/actu.html.twig', array(
+            'posts' => $posts,
+
+        ));
+    }
 }

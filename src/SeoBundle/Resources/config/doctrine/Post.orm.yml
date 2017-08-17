@@ -16,6 +16,16 @@ SeoBundle\Entity\Post:
             type: datetime
         contenu:
             type: text
+        sous_titre_1:
+            type: string
+            length: 255
+        contenu_1:
+            type: text
+        sous_titre_2:
+            type: string
+            length: 255
+        contenu_2:
+            type: text
     lifecycleCallbacks: {  }
 
     manyToOne:

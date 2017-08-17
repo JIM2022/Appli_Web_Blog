@@ -7,6 +7,15 @@ namespace SeoBundle\Entity;
  */
 class Post
 {
+/* Fonction pour Date Auto au jour*/
+   /* public function __construct()
+    {
+        $this->date = new \DateTime('now');
+    }
+
+    //generate code*/
+
+
     /**
      * @var int
      */

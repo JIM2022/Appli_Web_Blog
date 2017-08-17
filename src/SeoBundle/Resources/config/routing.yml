@@ -19,6 +19,12 @@ blog_delete:
     requirements:
         id: '\d+'
 
+blog_actu:
+    path:     /{id}/actu
+    defaults: { _controller: SeoBundle:Blog:actu }
+    requirements:
+        id: '\d+'
+
 
 
 
@@ -36,4 +42,6 @@ photo_delete:
     defaults: { _controller: SeoBundle:Media:destinationDelete }
     requirements:
         id: '\d+'
+
+
 

@@ -1001,6 +1001,19 @@ body {
   box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
 }
 
+/* line 1, ../sass/_blog_actu.scss */
+#blog_actu_content {
+  /* NavBar*/
+}
+/* line 4, ../sass/_blog_actu.scss */
+#blog_actu_content .navbar-default {
+  background-color: green;
+}
+/* line 9, ../sass/_blog_actu.scss */
+#blog_actu_content .actu {
+  margin-top: 50px;
+}
+
 /* line 4, ../sass/_login.scss */
 #login .picture_profile img {
   height: 450px;

@@ -1,0 +1,36 @@
+{% extends "@Seo/Default/layout.html.twig" %}
+{% block nav %}
+<div id="blog_actu_content">
+	{{ parent() }}
+	{% endblock %}
+
+{% block body %}
+	{% for post in posts %}
+	{{ dump(post) }}
+		<div class="container-fluid actu">
+			<div class="row">
+				<h3 class="title-actu col-lg-6 col-lg-offset-4">{{ post.titre }}</h3>
+			</div>
+			<div class="row">
+				<img class="img-responsive-actu col-lg-6" src="{{ asset('uploads/img/' ~ ( post.medias.src )) }}">
+			</div>
+			<div class="row">
+				<p class="content-actu col-lg-6 col-lg-offset-2">{{ post.contenu }}</p>
+			</div>
+			<div class="row">
+				<h4 class="title-actu col-lg-6 col-lg-offset-2">{{ post.sousTitre1 }}</h4>
+			</div>
+			<div class="row">
+				<p class="content-actu col-lg-6 col-lg-offset-2">{{ post.contenu1 }}</p>
+			</div>
+			<div class="row">
+				<h4 class="title-actu col-lg-6 col-lg-offset-2">{{ post.sousTitre2 }}</h4>
+			</div>
+			<div class="row">
+				<p class="content-actu col-lg-6 col-lg-offset-2">{{ post.contenu2 }}</p>
+			</div>
+		</div>
+</div>
+	{% endfor %}
+{% endblock %}
+

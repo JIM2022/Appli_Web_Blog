@@ -144,4 +144,120 @@ class Post
     {
         return $this->medias;
     }
+    /**
+     * @var string
+     */
+    private $sous_titre_1;
+
+    /**
+     * @var string
+     */
+    private $contenu_1;
+
+    /**
+     * @var string
+     */
+    private $sous_titre_2;
+
+    /**
+     * @var string
+     */
+    private $contenu_2;
+
+
+    /**
+     * Set sousTitre1
+     *
+     * @param string $sousTitre1
+     *
+     * @return Post
+     */
+    public function setSousTitre1($sousTitre1)
+    {
+        $this->sous_titre_1 = $sousTitre1;
+
+        return $this;
+    }
+
+    /**
+     * Get sousTitre1
+     *
+     * @return string
+     */
+    public function getSousTitre1()
+    {
+        return $this->sous_titre_1;
+    }
+
+    /**
+     * Set contenu1
+     *
+     * @param string $contenu1
+     *
+     * @return Post
+     */
+    public function setContenu1($contenu1)
+    {
+        $this->contenu_1 = $contenu1;
+
+        return $this;
+    }
+
+    /**
+     * Get contenu1
+     *
+     * @return string
+     */
+    public function getContenu1()
+    {
+        return $this->contenu_1;
+    }
+
+    /**
+     * Set sousTitre2
+     *
+     * @param string $sousTitre2
+     *
+     * @return Post
+     */
+    public function setSousTitre2($sousTitre2)
+    {
+        $this->sous_titre_2 = $sousTitre2;
+
+        return $this;
+    }
+
+    /**
+     * Get sousTitre2
+     *
+     * @return string
+     */
+    public function getSousTitre2()
+    {
+        return $this->sous_titre_2;
+    }
+
+    /**
+     * Set contenu2
+     *
+     * @param string $contenu2
+     *
+     * @return Post
+     */
+    public function setContenu2($contenu2)
+    {
+        $this->contenu_2 = $contenu2;
+
+        return $this;
+    }
+
+    /**
+     * Get contenu2
+     *
+     * @return string
+     */
+    public function getContenu2()
+    {
+        return $this->contenu_2;
+    }
 }

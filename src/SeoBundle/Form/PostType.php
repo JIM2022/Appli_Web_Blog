@@ -26,10 +26,18 @@ class PostType extends AbstractType
                 'label' => false,
                 'required' => true
             ))
-            ->add('sousTitre1',TextType::class)
-            ->add('contenu1', TextareaType::class)
-            ->add('sousTitre2',TextType::class)
-            ->add('contenu2', TextareaType::class)
+            ->add('sousTitre1',TextType::class,array(
+                'required' => false
+            ))
+            ->add('contenu1', TextareaType::class,array(
+                'required' => false
+            ))
+            ->add('sousTitre2',TextType::class,array(
+                'required' => false
+            ))
+            ->add('contenu2', TextareaType::class,array(
+                'required' => false
+            ))
             ->add('send', SubmitType::class, array(
                 'label'=>'Valider'
             ));

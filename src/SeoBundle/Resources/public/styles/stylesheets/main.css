@@ -1,3 +1,14 @@
+/* line 1, ../sass/global.scss */
+p {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.5em;
+}
+
+/* line 7, ../sass/global.scss */
+h2, h3, h4, h5 {
+  font-family: 'Kaushan Script', cursive;
+}
+
 /* line 2, ../sass/_homepage.scss */
 html,
 body {
@@ -7,7 +18,7 @@ body {
 
 /* line 7, ../sass/_homepage.scss */
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  /*font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
 }
 
 /* line 10, ../sass/_homepage.scss */
@@ -36,16 +47,14 @@ a:focus {
   color: #eb3812;
 }
 
-/* line 28, ../sass/_homepage.scss */
-h1,
+/*h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-}
-
+}*/
 /* line 36, ../sass/_homepage.scss */
 p {
   font-size: 16px;
@@ -603,6 +612,7 @@ body {
 }
 /* line 26, ../sass/_photo.scss */
 #photo_content .title_container .caption h2 {
+  font-family: 'Kaushan Script', cursive;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 3em;
@@ -611,7 +621,7 @@ body {
   bottom: 50%;
   right: 42%;
 }
-/* line 37, ../sass/_photo.scss */
+/* line 39, ../sass/_photo.scss */
 #photo_content .title_img {
   height: 300px;
   width: 100%;
@@ -624,11 +634,11 @@ body {
     font-family: 'feathericons';
   }
 }
-/* line 48, ../sass/_photo.scss */
+/* line 50, ../sass/_photo.scss */
 #photo_content *, #photo_content *:after, #photo_content *:before {
   box-sizing: border-box;
 }
-/* line 49, ../sass/_photo.scss */
+/* line 51, ../sass/_photo.scss */
 #photo_content .grid {
   position: relative;
   margin: 0 auto;
@@ -637,7 +647,7 @@ body {
   list-style: none;
   text-align: center;
 }
-/* line 50, ../sass/_photo.scss */
+/* line 52, ../sass/_photo.scss */
 #photo_content .grid figure {
   position: relative;
   float: left;
@@ -651,7 +661,7 @@ body {
   text-align: center;
   cursor: pointer;
 }
-/* line 51, ../sass/_photo.scss */
+/* line 53, ../sass/_photo.scss */
 #photo_content .grid figure img {
   position: relative;
   display: block;
@@ -659,7 +669,7 @@ body {
   max-width: 100%;
   opacity: .8;
 }
-/* line 52, ../sass/_photo.scss */
+/* line 54, ../sass/_photo.scss */
 #photo_content .grid figure figcaption {
   padding: 2em;
   color: #fff;
@@ -668,11 +678,11 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 53, ../sass/_photo.scss */
+/* line 55, ../sass/_photo.scss */
 #photo_content .grid figure figcaption::before, #photo_content .grid figure figcaption::after {
   pointer-events: none;
 }
-/* line 54, ../sass/_photo.scss */
+/* line 56, ../sass/_photo.scss */
 #photo_content .grid figure figcaption, #photo_content .grid figure figcaption > a {
   position: absolute;
   top: 0;
@@ -680,7 +690,7 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 55, ../sass/_photo.scss */
+/* line 57, ../sass/_photo.scss */
 #photo_content .grid figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
@@ -688,26 +698,27 @@ body {
   font-size: 0;
   opacity: 0;
 }
-/* line 56, ../sass/_photo.scss */
+/* line 58, ../sass/_photo.scss */
 #photo_content .grid figure h2 {
   word-spacing: -0.15em;
   font-weight: 800;
+  font-family: 'Kaushan Script', cursive;
 }
-/* line 57, ../sass/_photo.scss */
+/* line 59, ../sass/_photo.scss */
 #photo_content .grid figure h2 span {
   font-weight: 800;
 }
-/* line 58, ../sass/_photo.scss */
+/* line 60, ../sass/_photo.scss */
 #photo_content .grid figure h2, #photo_content .grid figure p {
   margin: 0;
 }
-/* line 59, ../sass/_photo.scss */
+/* line 61, ../sass/_photo.scss */
 #photo_content .grid figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
 @media screen and (max-width: 50em) {
-  /* line 61, ../sass/_photo.scss */
+  /* line 63, ../sass/_photo.scss */
   #photo_content .grid figure {
     display: inline-block;
     float: none;
@@ -715,11 +726,11 @@ body {
     width: 100%;
   }
 }
-/* line 78, ../sass/_photo.scss */
+/* line 80, ../sass/_photo.scss */
 #photo_content figure.effect-apollo {
   background: #3498db;
 }
-/* line 79, ../sass/_photo.scss */
+/* line 81, ../sass/_photo.scss */
 #photo_content figure.effect-apollo img {
   opacity: .95;
   -webkit-transition: opacity .35s,-webkit-transform .35s;
@@ -727,7 +738,7 @@ body {
   -webkit-transform: scale3d(1.05, 1.05, 1);
   transform: scale3d(1.05, 1.05, 1);
 }
-/* line 80, ../sass/_photo.scss */
+/* line 82, ../sass/_photo.scss */
 #photo_content figure.effect-apollo figcaption::before {
   position: absolute;
   top: 0;
@@ -741,7 +752,7 @@ body {
   -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
 }
-/* line 81, ../sass/_photo.scss */
+/* line 83, ../sass/_photo.scss */
 #photo_content figure.effect-apollo p {
   position: absolute;
   right: 0;
@@ -755,36 +766,36 @@ body {
   -webkit-transition: opacity .35s;
   transition: opacity .35s;
 }
-/* line 82, ../sass/_photo.scss */
+/* line 84, ../sass/_photo.scss */
 #photo_content figure.effect-apollo h2 {
   text-align: left;
 }
-/* line 83, ../sass/_photo.scss */
+/* line 85, ../sass/_photo.scss */
 #photo_content figure.effect-apollo:hover img {
   opacity: .6;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
-/* line 84, ../sass/_photo.scss */
+/* line 86, ../sass/_photo.scss */
 #photo_content figure.effect-apollo:hover figcaption::before {
   -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
 }
-/* line 85, ../sass/_photo.scss */
+/* line 87, ../sass/_photo.scss */
 #photo_content figure.effect-apollo:hover p {
   opacity: 1;
   -webkit-transition-delay: .1s;
   transition-delay: .1s;
 }
-/* line 86, ../sass/_photo.scss */
+/* line 88, ../sass/_photo.scss */
 #photo_content figure.effect-apollo {
   height: 350px;
 }
-/* line 91, ../sass/_photo.scss */
+/* line 93, ../sass/_photo.scss */
 #photo_content .title-form {
   margin-top: 50px;
 }
-/* line 95, ../sass/_photo.scss */
+/* line 97, ../sass/_photo.scss */
 #photo_content .submit-form {
   margin-bottom: 30px;
 }
@@ -811,23 +822,31 @@ body {
 #blog_content .navbar-default {
   background-color: green;
 }
-/* line 9, ../sass/_blog.scss */
+/* line 8, ../sass/_blog.scss */
+#blog_content .container_blog {
+  margin-top: 4%;
+}
+/* line 12, ../sass/_blog.scss */
+#blog_content h3 {
+  font-family: 'Kaushan Script', cursive;
+}
+/* line 17, ../sass/_blog.scss */
 #blog_content .img_box {
   margin-right: 0;
   margin-left: 0;
 }
-/* line 14, ../sass/_blog.scss */
+/* line 22, ../sass/_blog.scss */
 #blog_content .container_img {
   margin-top: 50px;
 }
-/* line 18, ../sass/_blog.scss */
+/* line 26, ../sass/_blog.scss */
 #blog_content .title_container {
   padding: 0;
   margin-top: 150px;
   margin-right: 0;
   margin-left: 0;
 }
-/* line 26, ../sass/_blog.scss */
+/* line 34, ../sass/_blog.scss */
 #blog_content .title_container .caption h2 {
   text-transform: uppercase;
   font-weight: 800;
@@ -837,7 +856,7 @@ body {
   bottom: 50%;
   right: 42%;
 }
-/* line 37, ../sass/_blog.scss */
+/* line 45, ../sass/_blog.scss */
 #blog_content .title_img {
   height: 300px;
   width: 100%;
@@ -850,7 +869,7 @@ body {
     font-family: 'feathericons';
   }
 }
-/* line 54, ../sass/_blog.scss */
+/* line 62, ../sass/_blog.scss */
 #blog_content span.s1 {
   position: absolute;
   top: 0;
@@ -859,7 +878,7 @@ body {
   text-transform: uppercase;
   color: #3C4447;
 }
-/* line 63, ../sass/_blog.scss */
+/* line 71, ../sass/_blog.scss */
 #blog_content span.s2 {
   font-weight: 800;
   position: absolute;
@@ -869,12 +888,12 @@ body {
   text-transform: uppercase;
   color: #3C4447;
 }
-/* line 74, ../sass/_blog.scss */
+/* line 82, ../sass/_blog.scss */
 #blog_content body {
   background-color: #353B3F;
   font-family: "Roboto", sans-serif;
 }
-/* line 80, ../sass/_blog.scss */
+/* line 88, ../sass/_blog.scss */
 #blog_content .card {
   position: relative;
   height: 450px;
@@ -885,7 +904,7 @@ body {
   -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
 }
-/* line 92, ../sass/_blog.scss */
+/* line 100, ../sass/_blog.scss */
 #blog_content .thumbnail {
   float: left;
   position: relative;
@@ -898,7 +917,7 @@ body {
   box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
   overflow: hidden;
 }
-/* line 107, ../sass/_blog.scss */
+/* line 115, ../sass/_blog.scss */
 #blog_content img.left {
   position: absolute;
   left: 50%;
@@ -909,25 +928,25 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 119, ../sass/_blog.scss */
+/* line 127, ../sass/_blog.scss */
 #blog_content .right {
   margin-left: 590px;
   margin-right: 20px;
 }
-/* line 124, ../sass/_blog.scss */
+/* line 132, ../sass/_blog.scss */
 #blog_content .title-post {
   padding-top: 15px;
   font-size: 3em;
   color: #4B4B4B;
 }
-/* line 131, ../sass/_blog.scss */
+/* line 139, ../sass/_blog.scss */
 #blog_content .author {
   background-color: #9ECAFF;
   height: 30px;
   width: 110px;
   border-radius: 20px;
 }
-/* line 138, ../sass/_blog.scss */
+/* line 146, ../sass/_blog.scss */
 #blog_content .author > img {
   padding-top: 5px;
   margin-left: 10px;
@@ -936,27 +955,28 @@ body {
   width: 25px;
   border-radius: 50%;
 }
-/* line 147, ../sass/_blog.scss */
+/* line 155, ../sass/_blog.scss */
 #blog_content h2 {
   padding-top: 8px;
   margin-right: 12px;
   text-align: right;
   font-size: 1.1em;
 }
-/* line 154, ../sass/_blog.scss */
+/* line 162, ../sass/_blog.scss */
 #blog_content .separator {
   margin-top: 10px;
   border: 1px solid #C3C3C3;
 }
-/* line 159, ../sass/_blog.scss */
+/* line 167, ../sass/_blog.scss */
 #blog_content p {
+  font-family: 'Architects Daughter', cursive;
   text-align: justify;
   padding-top: 10px;
   font-size: 1em;
   line-height: 150%;
   color: #4B4B4B;
 }
-/* line 168, ../sass/_blog.scss */
+/* line 177, ../sass/_blog.scss */
 #blog_content h5 {
   position: absolute;
   left: 30px;
@@ -964,7 +984,7 @@ body {
   font-size: 6rem;
   color: #C3C3C3;
 }
-/* line 176, ../sass/_blog.scss */
+/* line 185, ../sass/_blog.scss */
 #blog_content h6 {
   position: absolute;
   left: 30px;
@@ -972,18 +992,18 @@ body {
   font-size: 2rem;
   color: #C3C3C3;
 }
-/* line 185, ../sass/_blog.scss */
+/* line 194, ../sass/_blog.scss */
 #blog_content ul {
   margin-left: 250px;
 }
-/* line 189, ../sass/_blog.scss */
+/* line 198, ../sass/_blog.scss */
 #blog_content li {
   display: inline;
   list-style: none;
   padding-right: 40px;
   color: #7B7B7B;
 }
-/* line 197, ../sass/_blog.scss */
+/* line 206, ../sass/_blog.scss */
 #blog_content .fab {
   position: absolute;
   right: 50px;
@@ -1004,14 +1024,146 @@ body {
 /* line 1, ../sass/_blog_actu.scss */
 #blog_actu_content {
   /* NavBar*/
+  /* The card */
+  /* Image on the left side */
+  /* Right side of the card */
+  /*Title card*/
+  /* DATE of release */
+  /* Those futur buttons */
 }
 /* line 4, ../sass/_blog_actu.scss */
 #blog_actu_content .navbar-default {
-  background-color: green;
+  background-color: grey;
 }
 /* line 9, ../sass/_blog_actu.scss */
 #blog_actu_content .actu {
   margin-top: 50px;
+}
+/* line 13, ../sass/_blog_actu.scss */
+#blog_actu_content .second_content {
+  margin-top: 2%;
+  text-align: left;
+}
+/* line 18, ../sass/_blog_actu.scss */
+#blog_actu_content .third_content {
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+/* line 23, ../sass/_blog_actu.scss */
+#blog_actu_content h4.subtitle1, #blog_actu_content .subtitle2 {
+  font-size: 2em;
+  text-align: justify;
+  font-style: italic;
+  color: red;
+}
+/* line 33, ../sass/_blog_actu.scss */
+#blog_actu_content .card {
+  position: relative;
+  height: auto;
+  width: 1500px;
+  margin: 200px auto;
+  background-color: #FFF;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 45, ../sass/_blog_actu.scss */
+#blog_actu_content .thumbnail {
+  float: left;
+  position: relative;
+  left: 30px;
+  top: -80px;
+  height: 360px;
+  width: 540px;
+  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  /*overflow: hidden;*/
+}
+/* line 59, ../sass/_blog_actu.scss */
+#blog_actu_content img.left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 71, ../sass/_blog_actu.scss */
+#blog_actu_content .right {
+  margin-left: 590px;
+  margin-right: 20px;
+}
+/* line 76, ../sass/_blog_actu.scss */
+#blog_actu_content .title-post {
+  padding-top: 15px;
+  font-size: 3em;
+  color: #4B4B4B;
+}
+/* line 83, ../sass/_blog_actu.scss */
+#blog_actu_content .author {
+  background-color: #9ECAFF;
+  height: 30px;
+  width: 110px;
+  border-radius: 20px;
+}
+/* line 90, ../sass/_blog_actu.scss */
+#blog_actu_content .author > img {
+  padding-top: 5px;
+  margin-left: 10px;
+  float: left;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+/* line 99, ../sass/_blog_actu.scss */
+#blog_actu_content h2 {
+  padding-top: 8px;
+  margin-right: 12px;
+  text-align: right;
+  font-size: 1.1em;
+}
+/* line 106, ../sass/_blog_actu.scss */
+#blog_actu_content .separator {
+  margin-top: 10px;
+  border: 1px solid #C3C3C3;
+}
+/* line 111, ../sass/_blog_actu.scss */
+#blog_actu_content p {
+  text-align: justify;
+  padding-top: 10px;
+  font-size: 1em;
+  line-height: 150%;
+  color: #4B4B4B;
+}
+/* line 120, ../sass/_blog_actu.scss */
+#blog_actu_content h5 {
+  position: absolute;
+  left: 30px;
+  bottom: -120px;
+  font-size: 6rem;
+  color: #C3C3C3;
+}
+/* line 128, ../sass/_blog_actu.scss */
+#blog_actu_content h6 {
+  position: absolute;
+  left: 30px;
+  bottom: -55px;
+  font-size: 2rem;
+  color: #C3C3C3;
+}
+/* line 137, ../sass/_blog_actu.scss */
+#blog_actu_content ul {
+  margin-left: 250px;
+}
+/* line 141, ../sass/_blog_actu.scss */
+#blog_actu_content li {
+  display: inline;
+  list-style: none;
+  padding-right: 40px;
+  color: #7B7B7B;
 }
 
 /* line 4, ../sass/_login.scss */

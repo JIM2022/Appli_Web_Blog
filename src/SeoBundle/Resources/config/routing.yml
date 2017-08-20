@@ -9,12 +9,12 @@ blog_index:
     defaults: { _controller: SeoBundle:Blog:indexForm }
 
 blog_edit:
-    path:     /{id}/edit
+    path:     /{id}/Postedit
     defaults: { _controller: SeoBundle:Blog:editPost }
     methods:  [GET, POST]
 
 blog_delete:
-    path:     /{id}/delete
+    path:     /{id}/Postdelete
     defaults: { _controller: SeoBundle:Blog:deletePost }
     requirements:
         id: '\d+'

@@ -50,6 +50,15 @@
 
 {% endblock %}
 
+{% block footer %}
+ <footer class="footer">
+      <div class="container">
+        <img id="copyright" style="width: 30px; height: 30px;" src="{{ asset('bundles/seo/assets/img/copyright-xxl.png')}}">
+        <span class="text-muted">Copyright Jérémy Lemarinier.</span>
+      </div>
+    </footer>
+{% endblock %}
+
 {% block javascripts %}
 <script src="{{ asset('bundles/seo/assets/js/creative.js') }}"></script>
 {% endblock %}

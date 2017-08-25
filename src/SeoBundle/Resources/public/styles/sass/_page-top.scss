@@ -4,4 +4,16 @@
   {
     text-decoration:none
   }
+  /* Gestion du Carroussel de la HomePage*/
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img
+  {
+    display: block;
+    text-align: center;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+
+  }
+
 }

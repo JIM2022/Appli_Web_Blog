@@ -1,6 +1,6 @@
 homepage:
     path:     /
-    defaults: { _controller: SeoBundle:Default:index }
+    defaults: { _controller: SeoBundle:Index:index }
 
 
 

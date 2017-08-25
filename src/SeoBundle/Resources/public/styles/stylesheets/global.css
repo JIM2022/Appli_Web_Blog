@@ -1,11 +1,24 @@
 /* line 1, ../sass/global.scss */
 p {
   font-family: 'Architects Daughter', cursive;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-/* line 7, ../sass/global.scss */
+/* line 9, ../sass/global.scss */
 h2, h3, h4, h5 {
   font-family: 'Kaushan Script', cursive;
-  font-size: 2.5em;
+}
+
+/* line 13, ../sass/global.scss */
+h2 {
+  font-size: 35px;
+}
+
+/* line 17, ../sass/global.scss */
+.footer {
+  background-color: #222222;
+  color: white;
+  margin-bottom: 15px;
 }

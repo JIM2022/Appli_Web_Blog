@@ -203,7 +203,14 @@ h3
   }
 
   /* Floating action button */
-  .fab {
+  .fab
+  {
+    a:link{
+      color: white;
+    }
+    a:hover{
+      color: #F05F40;
+    }
     position: absolute;
     right: 50px;
     bottom: -40px;
@@ -212,7 +219,6 @@ h3
     background-color: #1875D0;
     width: 80px;
     height: 80px;
-    color: white;
     text-align: center;
     border-radius: 50%;
     -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);

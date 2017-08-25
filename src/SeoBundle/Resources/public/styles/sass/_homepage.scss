@@ -36,7 +36,7 @@
     background-color: #222222;
     color: white;
     margin-top:5px;
-    height: 25px;
+    height: 200px;
 
   }
   .text-faded {
@@ -141,25 +141,6 @@
       color: #1a8cf0;
     }
 
-  }
-  header {
-    position: relative;
-    width: 100%;
-    /*min-height: auto;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-position: center;
-    background-image: url('../../assets/img/header.jpg');
-    text-align: center;
-    color: white;
-  }
-  header .header-content {
-    position: relative;
-    text-align: center;
-    padding: 100px 15px 100px;
-    width: 100%;
   }
   header .header-content .header-content-inner h1 {
     font-weight: 700;

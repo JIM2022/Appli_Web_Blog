@@ -18,9 +18,16 @@ h2 {
 
 /* line 17, ../sass/global.scss */
 .footer {
+  height: 60px;
   background-color: #222222;
-  color: white;
-  margin-bottom: 15px;
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+/* line 24, ../sass/global.scss */
+.footer .text-muted {
+  font-family: 'Architects Daughter', cursive;
+  color: #F05F40;
 }
 
 /* line 2, ../sass/_homepage.scss */
@@ -73,7 +80,7 @@ a:focus {
   background-color: #222222;
   color: white;
   margin-top: 5px;
-  height: 25px;
+  height: 200px;
 }
 
 /* line 42, ../sass/_homepage.scss */
@@ -222,29 +229,6 @@ aside {
   }
 }
 /* line 145, ../sass/_homepage.scss */
-header {
-  position: relative;
-  width: 100%;
-  /*min-height: auto;*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url("../../assets/img/header.jpg");
-  text-align: center;
-  color: white;
-}
-
-/* line 158, ../sass/_homepage.scss */
-header .header-content {
-  position: relative;
-  text-align: center;
-  padding: 100px 15px 100px;
-  width: 100%;
-}
-
-/* line 164, ../sass/_homepage.scss */
 header .header-content .header-content-inner h1 {
   font-weight: 700;
   text-transform: uppercase;
@@ -253,12 +237,12 @@ header .header-content .header-content-inner h1 {
   font-size: 30px;
 }
 
-/* line 171, ../sass/_homepage.scss */
+/* line 152, ../sass/_homepage.scss */
 header .header-content .header-content-inner hr {
   margin: 30px auto;
 }
 
-/* line 174, ../sass/_homepage.scss */
+/* line 155, ../sass/_homepage.scss */
 header .header-content .header-content-inner p {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
@@ -267,12 +251,12 @@ header .header-content .header-content-inner p {
 }
 
 @media (min-width: 768px) {
-  /* line 181, ../sass/_homepage.scss */
+  /* line 162, ../sass/_homepage.scss */
   header {
     min-height: 100%;
   }
 
-  /* line 184, ../sass/_homepage.scss */
+  /* line 165, ../sass/_homepage.scss */
   header .header-content {
     position: absolute;
     top: 50%;
@@ -282,19 +266,19 @@ header .header-content .header-content-inner p {
     padding: 0 50px;
   }
 
-  /* line 192, ../sass/_homepage.scss */
+  /* line 173, ../sass/_homepage.scss */
   header .header-content .header-content-inner {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 197, ../sass/_homepage.scss */
+  /* line 178, ../sass/_homepage.scss */
   header .header-content .header-content-inner h1 {
     font-size: 50px;
   }
 
-  /* line 200, ../sass/_homepage.scss */
+  /* line 181, ../sass/_homepage.scss */
   header .header-content .header-content-inner p {
     font-size: 18px;
     max-width: 80%;
@@ -302,29 +286,29 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
 }
-/* line 207, ../sass/_homepage.scss */
+/* line 188, ../sass/_homepage.scss */
 .section-heading {
   margin-top: 0;
 }
 
-/* line 210, ../sass/_homepage.scss */
+/* line 191, ../sass/_homepage.scss */
 .service-box {
   max-width: 400px;
   margin: 50px auto 0;
 }
 
 @media (min-width: 992px) {
-  /* line 215, ../sass/_homepage.scss */
+  /* line 196, ../sass/_homepage.scss */
   .service-box {
     margin: 20px auto 0;
   }
 }
-/* line 219, ../sass/_homepage.scss */
+/* line 200, ../sass/_homepage.scss */
 .service-box p {
   margin-bottom: 0;
 }
 
-/* line 222, ../sass/_homepage.scss */
+/* line 203, ../sass/_homepage.scss */
 .portfolio-box {
   position: relative;
   display: block;
@@ -332,7 +316,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto;
 }
 
-/* line 228, ../sass/_homepage.scss */
+/* line 209, ../sass/_homepage.scss */
 .portfolio-box .portfolio-box-caption {
   color: white;
   opacity: 0;
@@ -348,7 +332,7 @@ header .header-content .header-content-inner p {
   transition: all 0.35s;
 }
 
-/* line 242, ../sass/_homepage.scss */
+/* line 223, ../sass/_homepage.scss */
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
   width: 100%;
   text-align: center;
@@ -357,63 +341,63 @@ header .header-content .header-content-inner p {
   transform: translateY(-50%);
 }
 
-/* line 249, ../sass/_homepage.scss */
+/* line 230, ../sass/_homepage.scss */
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-family: 'Kaushan Script', cursive;
   padding: 0 15px;
 }
 
-/* line 255, ../sass/_homepage.scss */
+/* line 236, ../sass/_homepage.scss */
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
 }
 
-/* line 260, ../sass/_homepage.scss */
+/* line 241, ../sass/_homepage.scss */
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-size: 18px;
 }
 
-/* line 263, ../sass/_homepage.scss */
+/* line 244, ../sass/_homepage.scss */
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
 
-/* line 266, ../sass/_homepage.scss */
+/* line 247, ../sass/_homepage.scss */
 .portfolio-box:focus {
   outline: none;
 }
 
 @media (min-width: 768px) {
-  /* line 270, ../sass/_homepage.scss */
+  /* line 251, ../sass/_homepage.scss */
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
   }
 
-  /* line 273, ../sass/_homepage.scss */
+  /* line 254, ../sass/_homepage.scss */
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
 }
-/* line 277, ../sass/_homepage.scss */
+/* line 258, ../sass/_homepage.scss */
 .call-to-action h2 {
   margin: 0 auto 20px;
 }
 
-/* line 280, ../sass/_homepage.scss */
+/* line 261, ../sass/_homepage.scss */
 .text-primary {
   color: #F05F40;
 }
 
-/* line 283, ../sass/_homepage.scss */
+/* line 264, ../sass/_homepage.scss */
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 287, ../sass/_homepage.scss */
+/* line 268, ../sass/_homepage.scss */
 .btn-default {
   color: #222222;
   background-color: white;
@@ -423,7 +407,7 @@ header .header-content .header-content-inner p {
   transition: all 0.35s;
 }
 
-/* line 295, ../sass/_homepage.scss */
+/* line 276, ../sass/_homepage.scss */
 .btn-default:hover,
 .btn-default:focus,
 .btn-default.focus,
@@ -435,14 +419,14 @@ header .header-content .header-content-inner p {
   border-color: #ededed;
 }
 
-/* line 305, ../sass/_homepage.scss */
+/* line 286, ../sass/_homepage.scss */
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   background-image: none;
 }
 
-/* line 310, ../sass/_homepage.scss */
+/* line 291, ../sass/_homepage.scss */
 .btn-default.disabled,
 .btn-default[disabled],
 fieldset[disabled] .btn-default,
@@ -465,13 +449,13 @@ fieldset[disabled] .btn-default.active {
   border-color: white;
 }
 
-/* line 331, ../sass/_homepage.scss */
+/* line 312, ../sass/_homepage.scss */
 .btn-default .badge {
   color: white;
   background-color: #222222;
 }
 
-/* line 335, ../sass/_homepage.scss */
+/* line 316, ../sass/_homepage.scss */
 .btn-primary {
   color: white;
   background-color: #1a8cf0;
@@ -481,7 +465,7 @@ fieldset[disabled] .btn-default.active {
   transition: all 0.35s;
 }
 
-/* line 343, ../sass/_homepage.scss */
+/* line 324, ../sass/_homepage.scss */
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
@@ -493,14 +477,14 @@ fieldset[disabled] .btn-default.active {
   border-color: #ed431f;
 }
 
-/* line 353, ../sass/_homepage.scss */
+/* line 334, ../sass/_homepage.scss */
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   background-image: none;
 }
 
-/* line 358, ../sass/_homepage.scss */
+/* line 339, ../sass/_homepage.scss */
 .btn-primary.disabled,
 .btn-primary[disabled],
 fieldset[disabled] .btn-primary,
@@ -523,13 +507,13 @@ fieldset[disabled] .btn-primary.active {
   border-color: #F05F40;
 }
 
-/* line 379, ../sass/_homepage.scss */
+/* line 360, ../sass/_homepage.scss */
 .btn-primary .badge {
   color: #1a8cf0;
   background-color: white;
 }
 
-/* line 383, ../sass/_homepage.scss */
+/* line 364, ../sass/_homepage.scss */
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
@@ -538,38 +522,38 @@ fieldset[disabled] .btn-primary.active {
   text-transform: uppercase;
 }
 
-/* line 390, ../sass/_homepage.scss */
+/* line 371, ../sass/_homepage.scss */
 .btn-xl {
   padding: 15px 30px;
 }
 
-/* line 393, ../sass/_homepage.scss */
+/* line 374, ../sass/_homepage.scss */
 ::-moz-selection {
   color: white;
   text-shadow: none;
   background: #222222;
 }
 
-/* line 398, ../sass/_homepage.scss */
+/* line 379, ../sass/_homepage.scss */
 ::selection {
   color: white;
   text-shadow: none;
   background: #222222;
 }
 
-/* line 403, ../sass/_homepage.scss */
+/* line 384, ../sass/_homepage.scss */
 img::selection {
   color: white;
   background: transparent;
 }
 
-/* line 407, ../sass/_homepage.scss */
+/* line 388, ../sass/_homepage.scss */
 img::-moz-selection {
   color: white;
   background: transparent;
 }
 
-/* line 411, ../sass/_homepage.scss */
+/* line 392, ../sass/_homepage.scss */
 body {
   webkit-tap-highlight-color: #222222;
 }
@@ -648,8 +632,11 @@ body {
   background: #3085a3;
   text-align: center;
   cursor: pointer;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
 }
-/* line 52, ../sass/_photo.scss */
+/* line 55, ../sass/_photo.scss */
 #photo_content .grid figure img {
   position: relative;
   display: block;
@@ -657,7 +644,7 @@ body {
   max-width: 100%;
   opacity: .8;
 }
-/* line 53, ../sass/_photo.scss */
+/* line 56, ../sass/_photo.scss */
 #photo_content .grid figure figcaption {
   padding: 2em;
   color: #fff;
@@ -666,11 +653,11 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 54, ../sass/_photo.scss */
+/* line 57, ../sass/_photo.scss */
 #photo_content .grid figure figcaption::before, #photo_content .grid figure figcaption::after {
   pointer-events: none;
 }
-/* line 55, ../sass/_photo.scss */
+/* line 58, ../sass/_photo.scss */
 #photo_content .grid figure figcaption, #photo_content .grid figure figcaption > a {
   position: absolute;
   top: 0;
@@ -678,7 +665,7 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 56, ../sass/_photo.scss */
+/* line 59, ../sass/_photo.scss */
 #photo_content .grid figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
@@ -686,27 +673,27 @@ body {
   font-size: 0;
   opacity: 0;
 }
-/* line 57, ../sass/_photo.scss */
+/* line 60, ../sass/_photo.scss */
 #photo_content .grid figure h2 {
   word-spacing: -0.15em;
   font-weight: 800;
   font-family: 'Kaushan Script', cursive;
 }
-/* line 58, ../sass/_photo.scss */
+/* line 61, ../sass/_photo.scss */
 #photo_content .grid figure h2 span {
   font-weight: 800;
 }
-/* line 59, ../sass/_photo.scss */
+/* line 62, ../sass/_photo.scss */
 #photo_content .grid figure h2, #photo_content .grid figure p {
   margin: 0;
 }
-/* line 60, ../sass/_photo.scss */
+/* line 63, ../sass/_photo.scss */
 #photo_content .grid figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
 @media screen and (max-width: 50em) {
-  /* line 62, ../sass/_photo.scss */
+  /* line 65, ../sass/_photo.scss */
   #photo_content .grid figure {
     display: inline-block;
     float: none;
@@ -714,11 +701,11 @@ body {
     width: 100%;
   }
 }
-/* line 67, ../sass/_photo.scss */
+/* line 70, ../sass/_photo.scss */
 #photo_content figure.effect-apollo {
   background: #3498db;
 }
-/* line 68, ../sass/_photo.scss */
+/* line 71, ../sass/_photo.scss */
 #photo_content figure.effect-apollo img {
   opacity: .95;
   -webkit-transition: opacity .35s,-webkit-transform .35s;
@@ -726,7 +713,7 @@ body {
   -webkit-transform: scale3d(1.05, 1.05, 1);
   transform: scale3d(1.05, 1.05, 1);
 }
-/* line 69, ../sass/_photo.scss */
+/* line 72, ../sass/_photo.scss */
 #photo_content figure.effect-apollo figcaption::before {
   position: absolute;
   top: 0;
@@ -740,7 +727,7 @@ body {
   -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
 }
-/* line 70, ../sass/_photo.scss */
+/* line 73, ../sass/_photo.scss */
 #photo_content figure.effect-apollo p {
   position: absolute;
   right: 0;
@@ -754,36 +741,36 @@ body {
   -webkit-transition: opacity .35s;
   transition: opacity .35s;
 }
-/* line 71, ../sass/_photo.scss */
+/* line 74, ../sass/_photo.scss */
 #photo_content figure.effect-apollo h2 {
   text-align: left;
 }
-/* line 72, ../sass/_photo.scss */
+/* line 75, ../sass/_photo.scss */
 #photo_content figure.effect-apollo:hover img {
   opacity: .6;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
-/* line 73, ../sass/_photo.scss */
+/* line 76, ../sass/_photo.scss */
 #photo_content figure.effect-apollo:hover figcaption::before {
   -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
 }
-/* line 74, ../sass/_photo.scss */
+/* line 77, ../sass/_photo.scss */
 #photo_content figure.effect-apollo:hover p {
   opacity: 1;
   -webkit-transition-delay: .1s;
   transition-delay: .1s;
 }
-/* line 75, ../sass/_photo.scss */
+/* line 78, ../sass/_photo.scss */
 #photo_content figure.effect-apollo {
   height: 350px;
 }
-/* line 80, ../sass/_photo.scss */
+/* line 83, ../sass/_photo.scss */
 #photo_content .title-form {
   margin-top: 50px;
 }
-/* line 84, ../sass/_photo.scss */
+/* line 87, ../sass/_photo.scss */
 #photo_content .submit-form {
   margin-bottom: 30px;
 }
@@ -1001,12 +988,19 @@ body {
   background-color: #1875D0;
   width: 80px;
   height: 80px;
-  color: white;
   text-align: center;
   border-radius: 50%;
   -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 208, ../sass/_blog.scss */
+#blog_content .fab a:link {
+  color: white;
+}
+/* line 211, ../sass/_blog.scss */
+#blog_content .fab a:hover {
+  color: #F05F40;
 }
 
 /* line 1, ../sass/_blog_actu.scss */
@@ -1183,7 +1177,6 @@ body {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
 }
 
 /* line 3, ../sass/_register-content.scss */

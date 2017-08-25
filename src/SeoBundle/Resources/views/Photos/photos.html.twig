@@ -48,11 +48,11 @@
 			</div>
 		</div>
 	{% endif %}
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row img_box">
 					{% for article in articles %}
-					<div class="container_img col-lg-3">
-						<div class="grid">
+					<div class="container_img">
+						<div class="grid col-lg-4">
 							<figure class="effect-apollo">
 								<img class="img" src="{{ asset('uploads/img/' ~ ( article.medias.src )) }}">
 								<figcaption>

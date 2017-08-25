@@ -111,19 +111,20 @@
 	<section class="no-padding" id="portfolio">
 		<div class="container-fluid">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
+				{#TODO : Faire Boucle pour l'indicateur#}
+				{#<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
 					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
+				</ol>#}
 				
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					
 					<div class="item active">
 						
-						<img src="http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/code-wallpaper-610x343.jpg" alt="Los Angeles">
+						<img src="{{ asset('bundles/seo/assets/img/portfolio/fullsize/ninja.jpg') }}" alt="ninja-code">
 					</div>
 					{% for article in articles %}
 					<div class="item">
@@ -285,4 +286,12 @@
 			</div>
 		</div>
 	</section>
+	{% block footer %}
+		<footer class="footer">
+			<div class="container">
+				<img id="copyright" style="width: 30px; height: 30px;" src="{{ asset('bundles/seo/assets/img/copyright-xxl.png')}}">
+				<span class="text-muted">Copyright Jérémy Lemarinier</span>
+			</div>
+		</footer>
+	{% endblock %}
 {% endblock %}

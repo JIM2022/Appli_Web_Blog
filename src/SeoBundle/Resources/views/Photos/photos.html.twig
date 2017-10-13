@@ -7,17 +7,17 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="title_container col-lg-12 col-centered">
+					<div class="caption">
+						<h2>Destinations</h2>
 					<img class="title_img" src="{{ asset('bundles/seo/assets/img/portfolio/fullsize/IMG_2544.JPG') }}">
-						<div class="caption">
-							<h2>Destinations</h2>
-						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	{% if is_granted('ROLE_ADMIN') %}
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-lg-offset-5">
+			<div class="row btn">
+				<div class="col-lg-offset-5 col-lg-3">
 					<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Ajout Destination</button>
 				</div>
 			</div>
@@ -48,11 +48,11 @@
 			</div>
 		</div>
 	{% endif %}
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row img_box">
 					{% for article in articles %}
 					<div class="container_img">
-						<div class="grid col-lg-4">
+						<div class="grid col-lg-4 col-md-5 col-sm-5">
 							<figure class="effect-apollo">
 								<img class="img" src="{{ asset('uploads/img/' ~ ( article.medias.src )) }}">
 								<figcaption>

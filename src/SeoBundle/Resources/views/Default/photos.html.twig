@@ -51,8 +51,8 @@
 			<div class="container-fluid">
 				<div class="row img_box">
 					{% for article in articles %}
-					<div class="container_img col-lg-3">
-						<div class="grid">
+					<div class="container_img">
+						<div class="grid col-xs-10 col-xs-offset-1 col-sm-4 col-md-4 col-lg-3">
 							<figure class="effect-apollo">
 								<img class="img" src="{{ asset('uploads/img/' ~ ( article.medias.src )) }}">
 								<figcaption>

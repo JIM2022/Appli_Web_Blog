@@ -6,7 +6,7 @@
 	{% block body %}
 		<div class="container-fluid">
 			<div class="row">
-				<div class="title_container col-lg-12 col-centered">
+				<div class="title_container col-lg-12">
 					<img class="title_img" src="{{ asset('bundles/seo/assets/img/portfolio/fullsize/IMG_2544.JPG') }}">
 						<div class="caption">
 							<h2>Destinations</h2>
@@ -15,10 +15,10 @@
 			</div>
 		</div>
 	{% if is_granted('ROLE_ADMIN') %}
-		<div class="container">
+	<div class="conainer">
 			<div class="row">
-				<div class="col-lg-3 col-lg-offset-5">
-					<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Ajout Destination</button>
+				<div class="col-lg-12">
+					<button class="btn btn-primary center-block" data-toggle="modal" data-target=".bd-example-modal-lg">Ajout Destination</button>
 				</div>
 			</div>
 			<div class="modal fade bd-example-modal-lg" aria-hidden="true">

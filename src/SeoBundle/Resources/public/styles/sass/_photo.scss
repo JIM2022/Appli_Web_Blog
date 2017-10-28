@@ -5,11 +5,14 @@
   {
     background-color: #1a8cf0;
   }
-
   .img_box
   {
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 5%;
+  }
+  .btn_content
+  {
+    margin-top: 10px;
   }
   .container_img
   {
@@ -51,8 +54,8 @@
 
   }*/
   *, *:after, *:before {box-sizing: border-box;}
-  .grid{position:relative;margin:0 auto;padding:1em 0 4em;max-width:1000px;list-style:none;text-align:center}
-  .grid figure{position:relative;float:left;overflow:hidden;margin-left:10%;margin-right:10%;min-width:400px;max-width:480px;max-height:360px;width:48%;background:#3085a3;
+  .grid{position:relative;/*margin:0 auto;*/padding:1em 0 4em;max-width:1000px;list-style:none;text-align:center}
+  .grid figure{position:relative;float:left;overflow:hidden;margin-left:0;margin-right:0;min-width:280px;max-width:400px;max-height:360px;width:48%;background:#3085a3;
     text-align:center;cursor:pointer;-webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);}
@@ -63,7 +66,7 @@
   .grid figure figcaption>a{z-index:1000;text-indent:200%;white-space:nowrap;font-size:0;opacity:0}
   .grid figure h2{word-spacing:-0.15em;font-weight:800; font-family: 'Kaushan Script', cursive}
   .grid figure h2 span{font-weight:800}
-  .grid figure h2,.grid figure p{margin:0}
+  .grid figure h2,.grid figure p{margin:0;font-size:165%}
   .grid figure p{letter-spacing:1px;font-size:68.5%}
   @media screen and (max-width:50em){
     .grid figure{display:inline-block;float:none;margin:10px auto;width:100%}

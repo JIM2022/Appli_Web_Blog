@@ -1176,11 +1176,12 @@ body {
 #page-top a:link {
   text-decoration: none;
 }
-/* line 8, ../sass/_page-top.scss */
+/* line 9, ../sass/_page-top.scss */
 #page-top .carousel-inner > .item > a > img, #page-top .carousel-inner > .item > img, #page-top .img-responsive, #page-top .thumbnail a > img, #page-top .thumbnail > img {
   display: block;
   text-align: center;
-  width: 900px;
+  width: auto;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
 }

@@ -73,30 +73,30 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-3 text-center">
+				<div class="col-lg-3 col-md-3 col-sm-3 text-center">
 					<div class="service-box">
 						<i class="fa fa-4x fa-desktop text-primary sr-icons"></i>
 						<h3>Code</h3>
 						<p class="text-muted">#</p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 text-center">
+				<div class="col-lg-3 col-md-3 col-sm-3 text-center">
+					<div class="service-box">
+						<a href="{{ path('blog_index') }}">
+							<i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+							<h3>Blog</h3>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 text-center">
 					<div class="service-box">
 						<a href="{{ path('photo') }}">
 							<i class="fa fa-4x fa-camera-retro text-primary sr-icons"></i>
 							<h3>Photos</h3>
-							<p class="text-muted">#</p>
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 text-center">
-					<div class="service-box">
-						<i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-						<h3>Blog</h3>
-						<p class="text-muted">#</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 text-center">
+				<div class="col-lg-3 col-md-3 col-sm-3 text-center">
 					<div class="service-box">
 						<i class="fa fa-4x fa-heart text-primary sr-icons"></i>
 						<h3>Favoris</h3>
@@ -109,97 +109,36 @@
 	
 	<section class="no-padding" id="portfolio">
 		<div class="container-fluid">
-			<div class="row no-gutter popup-gallery">
-				<div class="col-lg-4 col-sm-6">
-					<a href="{{ asset('bundles/seo/assets/img/portfolio/fullsize/test.JPG') }}" class="portfolio-box">
-						<img src="{{ asset('bundles/seo/assets/img/portfolio/thumbnails/test.JPG') }}" class="img-responsive" alt="">
-						<div class="portfolio-box-caption">
-							<div class="portfolio-box-caption-content">
-								<div class="project-category text-faded">
-									Category
-								</div>
-								<div class="project-name">
-									Project Name
-								</div>
-							</div>
-						</div>
-					</a>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				{#TODO : Faire Boucle pour l'indicateur#}
+				{#<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>#}
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="{{ asset('bundles/seo/assets/img/portfolio/fullsize/ninja.jpg') }}" alt="ninja-code">
+					</div>
+					{% for article in articles %}
+					<div class="item">
+						<img class="img" src="{{ asset('uploads/img/' ~ ( article.medias.src )) }}">
+					</div>
+					{% endfor %}
 				</div>
-				<div class="col-lg-4 col-sm-6">
-					<a href="{{ asset('bundles/seo/assets/img/portfolio/fullsize/7.jpg') }}" class="portfolio-box">
-						<img src="{{ asset('bundles/seo/assets/img/portfolio/thumbnails/7.jpg') }}" class="img-responsive" alt="">
-						<div class="portfolio-box-caption">
-							<div class="portfolio-box-caption-content">
-								<div class="project-category text-faded">
-									Category
-								</div>
-								<div class="project-name">
-									Project Name
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<a href="{{ asset('bundles/seo/assets/img/portfolio/fullsize/8.jpg') }}" class="portfolio-box">
-						<img src="{{ asset('bundles/seo/assets/img/portfolio/thumbnails/8.jpg') }}" class="img-responsive" alt="">
-						<div class="portfolio-box-caption">
-							<div class="portfolio-box-caption-content">
-								<div class="project-category text-faded">
-									Category
-								</div>
-								<div class="project-name">
-									Project Name
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<a href="{{ asset('bundles/seo/assets/img/portfolio/fullsize/9.JPG') }}" class="portfolio-box">
-						<img src="{{ asset('bundles/seo/assets/img/portfolio/fullsize/9.JPG') }}" class="img-responsive" alt="">
-						<div class="portfolio-box-caption">
-							<div class="portfolio-box-caption-content">
-								<div class="project-category text-faded">
-									Category
-								</div>
-								<div class="project-name">
-									Project Name
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<a href="{{ asset('bundles/seo/assets/img/portfolio/fullsize/10.JPG') }}" class="portfolio-box">
-						<img src="{{ asset('bundles/seo/assets/img/portfolio/thumbnails/10.JPG') }}" class="img-responsive" alt="">
-						<div class="portfolio-box-caption">
-							<div class="portfolio-box-caption-content">
-								<div class="project-category text-faded">
-									Category
-								</div>
-								<div class="project-name">
-									Project Name
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<a href="{{ asset('bundles/seo/assets/img/portfolio/fullsize/11.JPG') }}" class="portfolio-box">
-						<img src="{{ asset('bundles/seo/assets/img/portfolio/thumbnails/11.JPG') }}" class="img-responsive" alt="">
-						<div class="portfolio-box-caption">
-							<div class="portfolio-box-caption-content">
-								<div class="project-category text-faded">
-									Category
-								</div>
-								<div class="project-name">
-									Project Name
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
+				
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -251,4 +190,12 @@
 			</div>
 		</div>
 	</section>
+	{% block footer %}
+		<footer class="footer">
+			<div class="container">
+				<img id="copyright" style="width: 30px; height: 30px;" src="{{ asset('bundles/seo/assets/img/copyright-xxl.png')}}">
+				<span class="text-muted">Copyright Jérémy Lemarinier</span>
+			</div>
+		</footer>
+	{% endblock %}
 {% endblock %}

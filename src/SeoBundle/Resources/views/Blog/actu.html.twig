@@ -1,0 +1,56 @@
+{% extends "@Seo/Default/layout.html.twig" %}
+{% block nav %}
+<div id="blog_actu_content">
+	{{ parent() }}
+	{% endblock %}
+
+{% block body %}
+	{% for post in posts %}
+	<div class="fond">
+		<div class="card">
+			<div class="thumbnail">
+				<img class="left" src="{{ asset('uploads/img/' ~ ( post.medias.src )) }}">
+			</div>
+			<div class="right">
+				<h3 class="title-post">{{ post.titre }}</h3>
+				<div class="author">
+					<img src="{{ asset('bundles/seo/assets/img/portfolio/fullsize/stormtrooper.jpeg') }}"/>
+					<h2 id="author_title">Jim</h2>
+				</div>
+				<div class="separator">
+				</div>
+				<p class="content-post">{{ post.contenu}}</p>
+			</div>
+			{#<h5>{{ post.date|date("d") }}</h5>
+			<h6>{{ post.date|date("M") }}</h6>#}
+			<ul>
+				{#TODO A définir#}
+				<li><i class="fa fa-eye fa-2x"></i></li>
+				<li><i class="fa fa-heart-o fa-2x"></i></li>
+				<li><i class="fa fa-envelope-o fa-2x"></i></li>
+				<li><i class="fa fa-share-alt fa-2x"></i></li>
+			</ul>
+			<div class="row content_2">
+				<div class=" col-lg-10 col-lg-offset-1 second_content">
+					<h4 class="subtitle1">{{ post.sousTitre1 }}</h4>
+					<p>{{ post.contenu1}}</p>
+				</div>
+			</div>
+			<div class="row content_3">
+				<div class=" col-lg-10  col-lg-offset-1 third_content">
+					<h4 class="subtitle2">{{ post.sousTitre2 }}</h4>
+					<p>{{ post.contenu2}}</p>
+				</div>
+			</div>
+			{% if is_granted('ROLE_ADMIN') %}
+			<div class="row btn">
+				{#Edit Post#}
+				<a type="button" class="btn btn-primary col-lg-offset-6" href="{{ path('blog_edit', { 'id': post.id }) }}">Edition du Post</a>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+	{% endfor %}
+</div>
+{% endblock %}
+

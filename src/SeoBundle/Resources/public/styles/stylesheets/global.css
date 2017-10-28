@@ -1,0 +1,31 @@
+/* line 1, ../sass/global.scss */
+p {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* line 9, ../sass/global.scss */
+h2, h3, h4, h5 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+/* line 13, ../sass/global.scss */
+h2 {
+  font-size: 35px;
+}
+
+/* line 17, ../sass/global.scss */
+.footer {
+  height: 60px;
+  background-color: #222222;
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+/* line 24, ../sass/global.scss */
+.footer .text-muted {
+  font-family: 'Architects Daughter', cursive;
+  color: #F05F40;
+}

@@ -19,10 +19,10 @@
 							<a class="page-scroll" href="{{ path('homepage') }}">Home</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#services">TEST</a>
+							<a class="page-scroll" href={{ path('blog_index') }}>Blog</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#portfolio">TEST</a>
+							<a class="page-scroll" href={{ path('photo') }}>Photos</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="{{ path('homepage') }}#contact">contact</a>
@@ -40,14 +40,19 @@
 		<header>
 			<div class="header-content">
 				<div class="header-content-inner">
-					{#<h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
-					<hr>#}
-					{#<p></p>
-					<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>#}
 				</div>
 			</div>
 		</header>
 
+{% endblock %}
+
+{% block footer %}
+ <footer class="footer">
+      <div class="container">
+        <img id="copyright" style="width: 30px; height: 30px;" src="{{ asset('bundles/seo/assets/img/copyright-xxl.png')}}">
+        <span class="text-muted">Copyright Jérémy Lemarinier</span>
+      </div>
+    </footer>
 {% endblock %}
 
 {% block javascripts %}

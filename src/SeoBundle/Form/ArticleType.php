@@ -18,16 +18,17 @@ class ArticleType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('titre', TextType::class )
-            ->add('date', DateType::class)
+            ->add('date', DateType::class, array(
+                'widget' => 'single_text',
+            ))
             ->add('contenu', TextareaType::class)
             ->add('medias', MediaType::class,array(
                 'label' => false,
-                'required' => false
+                'required' => true
             ))
-        ->add('send', SubmitType::class, array(
-            'label'=>'Valider'
-        ))
-            ;
+             ->add('send', SubmitType::class, array(
+                 'label'=>'Valider'
+            ));
     }
     /**
      * {@inheritdoc}

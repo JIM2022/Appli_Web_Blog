@@ -5,8 +5,9 @@
     width: 100%;
   }
   body {
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    /*font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
   }
+
   hr {
     border-color: #F05F40;
     border-width: 3px;
@@ -25,19 +26,7 @@
   a:focus {
     color: #eb3812;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  }
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
+
   .bg-primary {
     /*background-color: #1a8cf0;*/
     background-image: url("../../assets/img/portfolio/fullsize/montagne.jpg");
@@ -46,6 +35,9 @@
   .bg-dark {
     background-color: #222222;
     color: white;
+    margin-top:5px;
+    height: 200px;
+
   }
   .text-faded {
     color: rgba(255, 255, 255, 0.7);
@@ -62,14 +54,16 @@
   .navbar-default {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05);
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Kaushan Script', cursive;
+
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
     transition: all 0.35s;
   }
   .navbar-default .navbar-header .navbar-brand {
     color: red;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Kaushan Script', cursive;
+
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -148,25 +142,6 @@
       color: #1a8cf0;
     }
 
-  }
-  header {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-position: center;
-    background-image: url('../../assets/img/header.jpg');
-    text-align: center;
-    color: white;
-  }
-  header .header-content {
-    position: relative;
-    text-align: center;
-    padding: 100px 15px 100px;
-    width: 100%;
   }
   header .header-content .header-content-inner h1 {
     font-weight: 700;
@@ -255,7 +230,8 @@
   }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Kaushan Script', cursive;
+
     padding: 0 15px;
   }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {

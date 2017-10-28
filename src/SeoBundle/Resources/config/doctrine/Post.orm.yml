@@ -1,0 +1,40 @@
+SeoBundle\Entity\Post:
+    type: entity
+    table: null
+    repositoryClass: SeoBundle\Repository\PostRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: 255
+        date:
+            type: datetime
+        contenu:
+            type: string
+            length: 255
+        sous_titre_1:
+            type: string
+            length: 255
+            nullable: true
+        contenu_1:
+            type: text
+            nullable: true
+        sous_titre_2:
+            type: string
+            length: 255
+            nullable: true
+        contenu_2:
+            type: text
+            nullable: true
+    lifecycleCallbacks: {  }
+
+    manyToOne:
+        medias:
+            targetEntity: SeoBundle\Entity\Media
+            inversedBy: post
+            cascade: ['all']

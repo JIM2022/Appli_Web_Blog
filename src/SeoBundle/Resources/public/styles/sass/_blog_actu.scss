@@ -1,5 +1,6 @@
 #blog_actu_content
 {
+
   /* NavBar*/
   .navbar-default
   {
@@ -33,8 +34,13 @@
   .card {
     position: relative;
     height: auto;
+
+    /*
     width: 1500px;
-    margin: 200px auto;
+    */
+   /* margin: 200px auto;*/
+    margin-top:200px;
+    margin-bottom:200px;
     background-color: #FFF;
     -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
@@ -145,5 +151,32 @@
     color: #7B7B7B;
   }
 
-
+  @media screen and (max-width: 840px)
+  {
+    /* Right side of the card */
+    .right {
+      margin-left: 500px;
+      margin-right: 20px;
+    }
+    .thumbnail {
+      left: 30px;
+      top: -10px;
+      height: 260px;
+      width: 440px;
+    }
+  }
+  @media screen and (max-width: 676px)
+  {
+    /* Right side of the card */
+    .right {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .thumbnail {
+     display: none;
+    }
+    img.left {
+    display: none;
+    }
+  }
 }

@@ -6,8 +6,8 @@
 
 {% block body %}
 	{% for post in posts %}
-	<div class="fond">
-		<div class="card">
+	<div class="row fond">
+		<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 card">
 			<div class="thumbnail">
 				<img class="left" src="{{ asset('uploads/img/' ~ ( post.medias.src )) }}">
 			</div>
@@ -31,21 +31,21 @@
 				<li><i class="fa fa-share-alt fa-2x"></i></li>
 			</ul>
 			<div class="row content_2">
-				<div class=" col-lg-10 col-lg-offset-1 second_content">
+				<div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 second_content">
 					<h4 class="subtitle1">{{ post.sousTitre1 }}</h4>
 					<p>{{ post.contenu1}}</p>
 				</div>
 			</div>
 			<div class="row content_3">
-				<div class=" col-lg-10  col-lg-offset-1 third_content">
+				<div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 third_content">
 					<h4 class="subtitle2">{{ post.sousTitre2 }}</h4>
 					<p>{{ post.contenu2}}</p>
 				</div>
 			</div>
 			{% if is_granted('ROLE_ADMIN') %}
-			<div class="row btn">
+			<div class="row btn center-block">
 				{#Edit Post#}
-				<a type="button" class="btn btn-primary col-lg-offset-6" href="{{ path('blog_edit', { 'id': post.id }) }}">Edition du Post</a>
+				<a type="button" class="btn btn-primary" href="{{ path('blog_edit', { 'id': post.id }) }}">Edition du Post</a>
 			</div>
 			{% endif %}
 		</div>

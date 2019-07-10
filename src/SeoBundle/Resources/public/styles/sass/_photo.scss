@@ -1,0 +1,99 @@
+#photo_content
+{
+  /* NavBar*/
+  .navbar-default
+  {
+    background-color: #1a8cf0;
+  }
+  .img_box
+  {
+    margin-right: 0;
+    margin-left: 5%;
+  }
+  .btn_content
+  {
+    margin-top: 10px;
+  }
+  .container_img
+  {
+    margin-top: 50px;
+  }
+  .title_container
+  {
+    padding: 0;
+    margin-top: 150px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  /*Position Title Photo*/
+  .title_container .caption h2
+  {
+    font-family: 'Kaushan Script', cursive;
+    text-transform:uppercase;
+    font-weight:800;
+    font-size: 3em;
+    color:white;
+    position: absolute;
+    bottom: 50%;
+    right: 42%;
+  }
+  /* btn ajout destination*/
+  .btn
+  {
+    display: inline;
+  }
+  .title_img
+  {
+    height: 300px;
+    width: 100%;
+  }
+  /*@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'feathericons';
+
+  }*/
+  *, *:after, *:before {box-sizing: border-box;}
+  .grid{position:relative;/*margin:0 auto;*/padding:1em 0 4em;max-width:1000px;list-style:none;text-align:center}
+  .grid figure{position:relative;float:left;overflow:hidden;margin-left:0;margin-right:0;min-width:280px;max-width:400px;max-height:360px;width:48%;background:#3085a3;
+    text-align:center;cursor:pointer;-webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);}
+  .grid figure img{position:relative;display:block;min-height:100%;max-width:100%;opacity:.8}
+  .grid figure figcaption{padding:2em;color:#fff;text-transform:uppercase;font-size:1.25em;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+  .grid figure figcaption::before,.grid figure figcaption::after{pointer-events:none}
+  .grid figure figcaption,.grid figure figcaption>a{position:absolute;top:0;left:0;width:100%;height:100%}
+  .grid figure figcaption>a{z-index:1000;text-indent:200%;white-space:nowrap;font-size:0;opacity:0}
+  .grid figure h2{word-spacing:-0.15em;font-weight:800; font-family: 'Kaushan Script', cursive}
+  .grid figure h2 span{font-weight:800}
+  .grid figure h2,.grid figure p{margin:0;font-size:165%}
+  .grid figure p{letter-spacing:1px;font-size:68.5%}
+  @media screen and (max-width:50em){
+    .grid figure{display:inline-block;float:none;margin:10px auto;width:100%}
+
+  }
+                  /*EFFET APOLLO*/
+
+  figure.effect-apollo{background:#3498db}
+  figure.effect-apollo img{opacity:.95;-webkit-transition:opacity .35s,-webkit-transform .35s;transition:opacity .35s,transform .35s;-webkit-transform:scale3d(1.05,1.05,1);transform:scale3d(1.05,1.05,1)}
+  figure.effect-apollo figcaption::before{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,0.5);content:'';-webkit-transition:-webkit-transform .6s;transition:transform .6s;-webkit-transform:scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);transform:scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0)}
+  figure.effect-apollo p{position:absolute;right:0;bottom:0;margin:3em;padding:0 1em;max-width:150px;border-right:4px solid #fff;text-align:right;opacity:0;-webkit-transition:opacity .35s;transition:opacity .35s}
+  figure.effect-apollo h2{text-align:left}
+  figure.effect-apollo:hover img{opacity:.6;-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+  figure.effect-apollo:hover figcaption::before{-webkit-transform:scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);transform:scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0)}
+  figure.effect-apollo:hover p{opacity:1;-webkit-transition-delay:.1s;transition-delay:.1s}
+  figure.effect-apollo {
+    height: 350px;
+  }
+
+// Modal Add Destinations
+  .title-form
+  {
+    margin-top: 50px;
+  }
+  .submit-form
+  {
+    margin-bottom: 30px;
+  }
+
+}

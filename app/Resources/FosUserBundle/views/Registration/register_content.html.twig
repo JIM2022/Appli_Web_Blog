@@ -1,0 +1,26 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+{% extends "base.html.twig" %}
+{% block body %}
+    <div id="register_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-offset-3 col-lg-6 picture_profile">
+                    <img src="https://img.planete-starwars.com/_main/bb8.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-8 picture_profile">
+                    {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+                    {{ form_widget(form) }}
+                </div>
+                    <div class="col-lg-12 btn_register">
+                        <input class="btn btn-success center-block"  type="submit" value="{{ 'registration.submit'|trans }}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+	{{ form_end(form) }}
+{% endblock %}
+

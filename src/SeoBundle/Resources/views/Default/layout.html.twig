@@ -1,5 +1,4 @@
 {% extends 'base.html.twig' %}
-
 {% block nav %}
 	<div id="page-top">
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -10,23 +9,26 @@
 						<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
 					</button>
 					<a class="navbar-brand page-scroll" href="#page-top">Blog de Jim</a>
-					<img id="img_logo" style="height: 50px; width: 50px;" src="{{ asset('bundles/assets/img/portfolio/fullsize/stormtrooper.jpeg') }}">
+					<img id="img_logo" style="height: 50px; width: 50px;" src="{{ asset('bundles/seo/assets/img/portfolio/fullsize/stormtrooper.jpeg') }}">
 				</div>
 				
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a class="page-scroll" href="#about">About</a>
+							<a class="page-scroll" href="{{ path('homepage') }}">Home</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#services">Menu</a>
+							<a class="page-scroll" href={{ path('blog_index') }}>Blog</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#portfolio">Portfolio</a>
+							<a class="page-scroll" href={{ path('photo') }}>Photos</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#contact">Contact</a>
+							<a class="page-scroll" href="{{ path('homepage') }}#contact">contact</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="{{  path('fos_user_security_login')}}">Login</a>
 						</li>
 					</ul>
 				</div>
@@ -38,12 +40,21 @@
 		<header>
 			<div class="header-content">
 				<div class="header-content-inner">
-					{#<h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
-					<hr>#}
-					{#<p></p>
-					<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>#}
 				</div>
 			</div>
 		</header>
 
+{% endblock %}
+
+{% block footer %}
+ <footer class="footer">
+      <div class="container">
+        <img id="copyright" style="width: 30px; height: 30px;" src="{{ asset('bundles/seo/assets/img/copyright-xxl.png')}}">
+        <span class="text-muted">Copyright Jérémy Lemarinier</span>
+      </div>
+    </footer>
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('bundles/seo/assets/js/creative.js') }}"></script>
 {% endblock %}

@@ -1,3 +1,47 @@
-seo_homepage:
+homepage:
     path:     /
-    defaults: { _controller: SeoBundle:Default:index }
+    defaults: { _controller: SeoBundle:Index:index }
+
+
+
+blog_index:
+    path:     /Actu
+    defaults: { _controller: SeoBundle:Blog:indexForm }
+
+blog_edit:
+    path:     /{id}/Postedit
+    defaults: { _controller: SeoBundle:Blog:editPost }
+    methods:  [GET, POST]
+
+blog_delete:
+    path:     /{id}/Postdelete
+    defaults: { _controller: SeoBundle:Blog:deletePost }
+    requirements:
+        id: '\d+'
+
+blog_actu:
+    path:     /{id}/actu
+    defaults: { _controller: SeoBundle:Blog:actu }
+    requirements:
+        id: '\d+'
+
+
+
+
+photo:
+    path:     /Photos
+    defaults: { _controller: SeoBundle:Media:destinationForm }
+
+photo_edit:
+    path:     /{id}/edit
+    defaults: { _controller: SeoBundle:Media:destinationEdit }
+    methods:  [GET, POST]
+
+photo_delete:
+    path:     /{id}/delete
+    defaults: { _controller: SeoBundle:Media:destinationDelete }
+    requirements:
+        id: '\d+'
+
+
+

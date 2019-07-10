@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Yellowtail', cursive;
+}
+
+* {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: x-large;
+}
+h3{
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 80px;
+}
+
+body{
+    background-color: lightblue;
+}
+
+ul{
+    list-style: none;
+    margin: 40px;
+}
+li{
+    padding-top: 60px;
+}
